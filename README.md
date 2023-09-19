@@ -1,2 +1,2 @@
-# chakra-ui-card
+# rlom-univ
 Created with CodeSandbox

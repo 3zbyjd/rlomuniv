@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'rlom-lms'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_569C2302C6424263BC0089F6C0566862 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DEED3741FC9549019026E5EAB9A6783A }}
           package: .

@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Card, CardHeader, CardBody, CardFooter, Divider, Heading, Image, SimpleGrid, Stack, StackDivider, Text, Container } from '@chakra-ui/react';
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Image, SimpleGrid, Stack, Text, Container } from '@chakra-ui/react';
 
 function CourseCard() {    
     return (
@@ -8,7 +8,7 @@ function CourseCard() {
                 <Card maxW='xs'>
                     <CardBody>
                     <Image
-                        src='src/assets/img/course_logos/code_screen.jpg'
+                        src='/assets/img/course_logos/code_screen.jpg'
                         alt='python course logo'
                         borderRadius='lg'
                     />
@@ -37,7 +37,7 @@ function CourseCard() {
                 <Card maxW='xs'>
                     <CardBody>
                     <Image
-                        src='src/assets/img/course_logos/code_screen2.jpg'
+                        src='/assets/img/course_logos/code_screen2.jpg'
                         alt='react code logo'
                         borderRadius='lg'
                     />
@@ -66,7 +66,7 @@ function CourseCard() {
                 <Card maxW='xs'>
                     <CardBody>
                     <Image
-                        src='src/assets/img/course_logos/fitness1.jpg'
+                        src='/assets/img/course_logos/fitness1.jpg'
                         alt='fitness1 Logo'
                         borderRadius='lg'
                     />
@@ -95,7 +95,7 @@ function CourseCard() {
                 <Card maxW='xs'>
                     <CardBody>
                     <Image
-                        src='src/assets/img/course_logos/cross_sm.jpg'
+                        src='/assets/img/course_logos/cross_sm.jpg'
                         alt='Welcome Logo'
                         borderRadius='lg'
                     />
@@ -124,7 +124,7 @@ function CourseCard() {
                 <Card maxW='xs'>
                     <CardBody>
                     <Image
-                        src='src/assets/img/course_logos/group_coding.jpg'
+                        src='/assets/img/course_logos/group_coding.jpg'
                         alt='git course logo'
                         borderRadius='lg'
                     />
@@ -153,7 +153,7 @@ function CourseCard() {
                 <Card maxW='xs'>
                     <CardBody>
                     <Image
-                        src='src/assets/img/course_logos/business_table.jpg'
+                        src='/assets/img/course_logos/business_table.jpg'
                         alt='Learn to plan and start your own business'
                         borderRadius='lg'
                     />

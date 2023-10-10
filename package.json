@@ -1,10 +1,13 @@
 {
+  "homepage": "https://www.redeemingloveuniversity.education",
   "name": "rlom_univ_lms",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy":"",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

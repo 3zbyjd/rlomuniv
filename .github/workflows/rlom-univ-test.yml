@@ -1,4 +1,4 @@
-name: Super-Linter
+name: RLOM Univ Tester
 
 on:
   push:

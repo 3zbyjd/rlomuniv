@@ -29,5 +29,5 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ github.repository }}-artifact
-          path: /${{ github.repository }}/
+          name: rlomuniv-artifact
+          path: dist/

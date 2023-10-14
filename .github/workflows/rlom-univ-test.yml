@@ -35,7 +35,7 @@ jobs:
       - name: Copy folder content recursively to remote
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: C:\Users\drobe\Downloads\rlomuniv
+          local: C:\Users\drobe\Downloads\rlomuniv\
           remote: home/demond/www
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}

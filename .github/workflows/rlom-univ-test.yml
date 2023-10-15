@@ -33,13 +33,11 @@ jobs:
           path: dist/
 
       - name: Copy folder content recursively to remote
-        uses: garygrossgarten/github-action-scp@release
+        uses: appleboy/scp-action@v0.1.4
         with:
-          local: C:\Users\drobe\Downloads\rlomuniv\
-          remote: home/demond/www
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          passphrase: Sanford@&$^#&$11
-          recursive: true
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: dist/
+          target: www/rlomuniv/

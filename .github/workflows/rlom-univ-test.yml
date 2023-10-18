@@ -41,4 +41,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           source: dist/
+          overwrite: true
           target: ${{ secrets.TARGET }}

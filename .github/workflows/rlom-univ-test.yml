@@ -38,8 +38,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          password: ${{ secrets.PASSPHRASE }}
           source: dist/
           overwrite: true
           target: ${{ secrets.TARGET }}

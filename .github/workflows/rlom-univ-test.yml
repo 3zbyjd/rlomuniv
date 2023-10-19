@@ -42,5 +42,5 @@ jobs:
           source: dist/
           overwrite: true
           target: ${{ secrets.TARGET }}
-          tar_tmp_path: ${{ secrets.TMP_PATH }}
-          tar_exec: ${{ secrets.TMP_PATH }}
+          #tar_tmp_path: ${{ secrets.TMP_PATH }}
+          #tar_exec: ${{ secrets.TMP_PATH }}

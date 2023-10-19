@@ -43,4 +43,4 @@ jobs:
           overwrite: true
           target: ${{ secrets.TARGET }}
           tar_tmp_path: ${{ secrets.TMP_PATH }}
-          tar_exec: ${{ secrets.TAR_PATH }}
+          tar_exec: ${{ secrets.TMP_PATH }}

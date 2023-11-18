@@ -1,4 +1,4 @@
-name: RLOM Univ Build
+name: RLOM Univ CI
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - "master"
 
 jobs:
-  test:
+  name: "Deploy to production"
     runs-on: ubuntu-latest
 
     steps:
@@ -32,15 +32,26 @@ jobs:
           name: rlomuniv
           path: dist/
 
-      - name: Copy folder content recursively to remote
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          password: ${{ secrets.PASSPHRASE }}
-          source: dist/
-          overwrite: true
-          target: ${{ secrets.TARGET }}
-          tar_tmp_path: ${{ secrets.TMP_PATH }}
-          tar_exec: ${{ secrets.TAR_PATH }}
+      - name: Conneect to remote
+        run: |
+          Host demond
+            HostName $SSH_HOST
+            User $SSH_USER
+            Ident
+        env:
+          SSH_USER: ${{ secrets.USERNAME }}
+          SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.HOST }}
+
+      - name: Copy artifact to remote
+        # uses: appleboy/scp-action@v0.1.4
+        # with:
+        #   host: ${{ secrets.HOST }}
+        #   username: ${{ secrets.USERNAME }}
+        #   port: ${{ secrets.PORT }}
+        #   password: ${{ secrets.PASSPHRASE }}
+        #   source: dist/
+        #   overwrite: true
+        #   target: ${{ secrets.TARGET }}
+        #   tar_tmp_path: ${{ secrets.TMP_PATH }}
+        #   tar_exec: ${{ secrets.TAR_PATH }}

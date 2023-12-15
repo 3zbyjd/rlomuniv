@@ -43,7 +43,7 @@ jobs:
 
       - name: Copy artifact to remote
         call-workflow-using-branch:
-          uses: 3zbyjd/rlomuniv/.github/workflows/deployment_action/action.yml@main
+          uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
         # uses: appleboy/scp-action@v0.1.4
         # with:
         #   host: ${{ secrets.HOST }}

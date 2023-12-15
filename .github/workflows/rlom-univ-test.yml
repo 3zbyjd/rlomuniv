@@ -9,13 +9,11 @@ on:
       - "master"
 
 jobs:
-  name: "Deploy to production"
+  Build_Project:
+    name: "Deploy to production"
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -44,6 +42,8 @@ jobs:
           SSH_HOST: ${{ secrets.HOST }}
 
       - name: Copy artifact to remote
+        call-workflow-using-branch:
+          uses: 3zbyjd/rlomuniv/.github/workflows/deployment_action/action.yml@main
         # uses: appleboy/scp-action@v0.1.4
         # with:
         #   host: ${{ secrets.HOST }}

@@ -44,7 +44,7 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_HOST: ${{ secrets.HOST }}
 
-      - name: Copy artifact to remote        
+      # - name: Copy artifact to remote        
         # uses: appleboy/scp-action@v0.1.4
         # with:
         #   host: ${{ secrets.HOST }}

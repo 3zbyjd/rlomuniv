@@ -10,6 +10,8 @@ on:
   workflow_dispatch:
 
 jobs:
+  call-workflow-using-branch:
+          uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main          
   Build_Project:
     name: "Deploy to production"
     runs-on: ubuntu-latest
@@ -42,9 +44,7 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_HOST: ${{ secrets.HOST }}
 
-      - name: Copy artifact to remote
-        call-workflow-using-branch:
-          uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
+      - name: Copy artifact to remote        
         # uses: appleboy/scp-action@v0.1.4
         # with:
         #   host: ${{ secrets.HOST }}

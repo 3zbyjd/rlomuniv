@@ -11,8 +11,8 @@ on:
 
 jobs:  
   Build_Project:
-    - name: call-workflow-using-branch
-      uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main 
+    # call-workflow-using-branch
+    uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main 
     name: "Deploy to production"
     runs-on: ubuntu-latest
     steps:

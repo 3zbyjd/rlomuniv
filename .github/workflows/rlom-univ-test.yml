@@ -9,27 +9,26 @@ on:
       - "master"
   workflow_dispatch:
 
-jobs:  
+jobs:
   call-workflow-using-branch:
     name: Deployment Workflow
-    uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main 
+    uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
 
-  Build_Project:    
+  runs:
     name: "Deploy to production"
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-node@v3
-          with:
-            node-version: "20.x"
-        - run: npm install
-        - run: npm run build
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
+      - run: npm install
+      - run: npm run build
 
     #   - uses: actions/upload-artifact@v3
     #     with:
     #       name: rlomuniv
     #       path: dist/
-
     #   - name: Conneect to remote
     #     run: |
     #       Host demond
@@ -41,15 +40,15 @@ jobs:
     #       SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
     #       SSH_HOST: ${{ secrets.HOST }}
 
-      # - name: Copy artifact to remote        
-        # uses: appleboy/scp-action@v0.1.4
-        # with:
-        #   host: ${{ secrets.HOST }}
-        #   username: ${{ secrets.USERNAME }}
-        #   port: ${{ secrets.PORT }}
-        #   password: ${{ secrets.PASSPHRASE }}
-        #   source: dist/
-        #   overwrite: true
-        #   target: ${{ secrets.TARGET }}
-        #   tar_tmp_path: ${{ secrets.TMP_PATH }}
-        #   tar_exec: ${{ secrets.TAR_PATH }}
+    # - name: Copy artifact to remote
+    # uses: appleboy/scp-action@v0.1.4
+    # with:
+    #   host: ${{ secrets.HOST }}
+    #   username: ${{ secrets.USERNAME }}
+    #   port: ${{ secrets.PORT }}
+    #   password: ${{ secrets.PASSPHRASE }}
+    #   source: dist/
+    #   overwrite: true
+    #   target: ${{ secrets.TARGET }}
+    #   tar_tmp_path: ${{ secrets.TMP_PATH }}
+    #   tar_exec: ${{ secrets.TAR_PATH }}

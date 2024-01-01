@@ -17,7 +17,6 @@ jobs:
   runs:
     name: "Deploy to production"
     runs-on: ubuntu-latest
-    using: "composite"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3

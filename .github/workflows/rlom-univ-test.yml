@@ -10,11 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:  
-  # call-workflow-using-branch:
-  #   name: Deployment Workflow
-  #   uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main 
-
-  runs:
+  Job_1:
     name: "Deploy to production"
     runs-on: ubuntu-latest
     steps:
@@ -24,9 +20,10 @@ jobs:
             node-version: "20.x"
         - run: npm install
         - run: npm run build
-        
-        - name: Deployment Workflow
-          uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
+
+  Job_2:
+    name: Deployment Workflow
+    uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main   
 
     #   - uses: actions/upload-artifact@v3
     #     with:

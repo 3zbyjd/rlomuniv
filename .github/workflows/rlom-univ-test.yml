@@ -22,8 +22,11 @@ jobs:
         - run: npm run build
 
   Job_2:
-    - name: Deployment Workflow
-      uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main   
+    name: Deployment Workflow
+    runs-on: ubuntu-latest
+    using: "composite"
+    uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
+       
 
     #   - uses: actions/upload-artifact@v3
     #     with:

@@ -12,7 +12,6 @@ on:
 jobs:  
   Job_1:
     name: "Deploy to production"
-    runs-on: ubuntu-latest
     uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
     runs-on: ubuntu-latest
     steps:

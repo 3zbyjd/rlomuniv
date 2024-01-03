@@ -13,6 +13,8 @@ jobs:
   Job_1:
     name: "Deploy to production"
     runs-on: ubuntu-latest
+    uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
+    runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v4
         - uses: actions/setup-node@v3
@@ -21,10 +23,10 @@ jobs:
         - run: npm install
         - run: npm run build
 
-  Job_2:
-    name: Deployment Workflow
-    runs-on: ubuntu-latest
-    uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
+  # Job_2:
+  #   name: Deployment Workflow
+  #   runs-on: ubuntu-latest
+  #   uses: 3zbyjd/deployment_action/.github/workflows/action.yml@main
        
 
     #   - uses: actions/upload-artifact@v3

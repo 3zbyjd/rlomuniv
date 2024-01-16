@@ -1,4 +1,4 @@
-name: RLOM Univ CI
+name: RLOM University
 
 on:
   push:
@@ -10,13 +10,17 @@ on:
   workflow_dispatch:
 
 jobs:
-
   Job_1:
-    - name: executing remote ssh commands using password
-    uses: appleboy/ssh-action@v1.0.3
-    with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: whoami
+    name: executing remote ssh commands using password
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            rm -r /home/demond/www/rlomuniv/*
+            cd www/rlomuniv                
+            touch abc.txt

@@ -1,0 +1,22 @@
+name: RLOM Univ CI
+
+on:
+  push:
+    branches:
+      - "master"
+  pull_request:
+    branches:
+      - "master"
+  workflow_dispatch:
+
+jobs:
+
+  Job_1:
+    - name: executing remote ssh commands using password
+    uses: appleboy/ssh-action@v1.0.3
+    with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: whoami

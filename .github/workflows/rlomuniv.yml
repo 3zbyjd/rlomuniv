@@ -43,5 +43,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
-          source: "div/"
+          source: "dist/"
           target: www/rlomuniv

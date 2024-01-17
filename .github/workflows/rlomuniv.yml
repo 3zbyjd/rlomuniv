@@ -44,4 +44,4 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
           source: rlomuniv/*
-          target: www/rlomuniv
+          target: www

@@ -33,9 +33,8 @@ jobs:
           port: 22
           script: |
             pwd
-            if [ -z "$(ls -A home/demond/www/rlomuniv)" ]
-            then
-                rm -r /home/demond/www/rlomuniv/*
+            if [ -d "home/demond/www/rlomuniv" ]; then
+                rm -r /home/demond/www/rlomuniv
             fi
       - uses: appleboy/scp-action@v0.1.7
         with:

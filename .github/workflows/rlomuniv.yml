@@ -22,7 +22,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-artifact@v3
         with:
-          name: rlomuniv
+          #name: rlomuniv
           path: dist/
       - uses: appleboy/ssh-action@v1.0.3
         with:
@@ -43,5 +43,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
-          source: "rlomuniv/"
+          source: "div/"
           target: www/rlomuniv

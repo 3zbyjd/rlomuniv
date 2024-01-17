@@ -33,6 +33,7 @@ jobs:
           port: 22
           script: |
             if [ -z "$(ls -A home/demond/www/rlomuniv)" ]
+            then
                 rm -r /home/demond/www/rlomuniv/*
             fi
       - uses: appleboy/scp-action@v0.1.7

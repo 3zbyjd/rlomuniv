@@ -32,7 +32,9 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
           script: |
-            rm -r /home/demond/www/rlomuniv/*
+            if [ -z "$(ls -A home/demond/www/rlomuniv)" ]
+                rm -r /home/demond/www/rlomuniv/*
+            fi
       - uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}

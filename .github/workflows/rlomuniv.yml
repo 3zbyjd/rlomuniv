@@ -44,6 +44,7 @@ jobs:
           script: |
             pwd
             if [ -d "home/demond/www/dist" ]; then
-                mv /home/demond/www/dist /home/demond/www/rlomuniv
-                chmod -R 755 /home/demond/www/rlomuniv
+                cd www
+                mv dist rlomuniv
+                chmod -R 755 rlomuniv
             fi

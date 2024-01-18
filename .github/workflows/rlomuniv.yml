@@ -32,20 +32,24 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
           rm: true
-          source: dist/*
+          source: dist
           target: www/dist
         if: success()
-      # - uses: appleboy/ssh-action@v1.0.3
-      #   with:
-      #     host: ${{ secrets.HOST }}
-      #     username: ${{ secrets.USERNAME }}
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     passphrase: ${{ secrets.PASSPHRASE }}
-      #     port: 22
-      #     script: |
-      #       if [ -d "home/demond/www/dist" ]; then
-      #           cd www
-      #           pwd
-      #           mv dist rlomuniv
-      #           chmod -R 755 rlomuniv
-      #       fi
+      - uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          port: 22
+          script: |
+            # if [ -d "home/demond/www/dist" ]; then
+            #     cd www
+            #     pwd
+            #     mv dist rlomuniv
+            #     chmod -R 755 rlomuniv
+            # fi
+            cd www
+            pwd
+            mv dist rlomuniv
+            chmod -R 755 rlomuniv

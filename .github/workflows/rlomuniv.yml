@@ -34,6 +34,7 @@ jobs:
           rm: true
           source: dist/*
           target: www/dist
+        if: success()
       - uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}

@@ -24,6 +24,16 @@ jobs:
         with:
           name: rlomuniv
           path: dist/
+      - uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          port: 22
+          rm: true
+          source: dist/*
+          target: www/
       - uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
@@ -33,15 +43,7 @@ jobs:
           port: 22
           script: |
             pwd
-            if [ -d "home/demond/www/rlomuniv" ]; then
-                rm -r /home/demond/www/rlomuniv
+            if [ -d "home/demond/www/dist" ]; then
+                mv /home/demond/www/dist /home/demond/www/rlomuniv
+                chmod -R 755 /home/demond/www/rlomuniv
             fi
-      - uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          port: 22
-          source: dist/*
-          target: www/rlomuniv

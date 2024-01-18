@@ -23,7 +23,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: rlomuniv
-          path: rlomuniv/
+          path: dist/
       - uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}
@@ -41,5 +41,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
-          source: dist/*
-          target: www/rlomuniv
+          script: |
+            pwd
+            if [ -d "home/demond/www/dist" ]; then
+                mv /home/demond/www/dist /home/demond/www/rlomuniv
+                chmod -R 755 /home/demond/www/rlomuniv
+            fi

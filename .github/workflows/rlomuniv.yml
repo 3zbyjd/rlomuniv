@@ -33,7 +33,7 @@ jobs:
           port: 22
           rm: true
           source: dist/*
-          target: www/
+          target: www/dist
       - uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
@@ -42,7 +42,6 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
           script: |
-            pwd
             if [ -d "home/demond/www/dist" ]; then
                 cd www
                 mv dist rlomuniv

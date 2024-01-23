@@ -9,9 +9,9 @@ function SiteHeader() {
           src="/assets/img/rlom_univ_logo.png"
           alt="RLOM University Logo"
           pb={2}
-        />
-        <LogIn />
+        />       
       </Box>
+      <Box><LogIn /></Box>
     </Container>
   );
 }

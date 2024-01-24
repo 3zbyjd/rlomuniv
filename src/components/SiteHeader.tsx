@@ -10,7 +10,6 @@ function SiteHeader() {
                       "footer"`}
       gridTemplateRows={'50px 1fr 30px'}
       gridTemplateColumns={'150px 1fr'}
-      w="100%"
       h='200px'
       gap='1'
       color='blackAlpha.700'

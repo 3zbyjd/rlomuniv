@@ -6,7 +6,7 @@ function SiteHeader() {
     <>
     <Grid
       templateAreas={`"header"
-                      "main main"
+                      "main"
                       "footer"`}
       gridTemplateRows={'50px 1fr 30px'}
       gridTemplateColumns={'150px 1fr'}
@@ -19,10 +19,7 @@ function SiteHeader() {
         Header
       </GridItem>
       <GridItem pl='2' bg='green.300' area={'main'}>
-        Main Left
-      </GridItem>
-      <GridItem pl='2' bg='green.300' area={'main'}>
-        Main Right
+        Main
       </GridItem>
       <GridItem pl='2' bg='blue.300' area={'footer'}>
         Footer

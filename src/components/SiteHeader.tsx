@@ -21,8 +21,8 @@ function SiteHeader() {
         <GridItem pl='2' bg='green.300' area={'mainL'}>
           Main Left
         </GridItem>
-        <GridItem pl='2' bg='blue.300' area={'footer'}>
-          Footer
+        <GridItem pl='2' bg='blue.300' area={'mainR'}>
+          Main Right
         </GridItem>
       </Grid>
     </Container>

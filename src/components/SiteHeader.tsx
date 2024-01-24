@@ -6,7 +6,7 @@ function SiteHeader() {
     <>
     <Grid
       templateAreas={`"header"
-                      "main"
+                      "main main"
                       "footer"`}
       gridTemplateRows={'50px 1fr 30px'}
       gridTemplateColumns={'150px 1fr'}

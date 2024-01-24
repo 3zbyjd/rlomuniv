@@ -7,9 +7,8 @@ function SiteHeader() {
     <Container maxW="50%" pt={2} pb={2} bg='green.400'>
       <Grid
         templateAreas={`"header"
-                        "mainL"
-                        "footer"`}
-        gridTemplateRows={'50px 1fr 30px'}
+                        "mainL mainR"`}
+        gridTemplateRows={'50px 1fr'}
         gridTemplateColumns={'150px 1fr'}
         h='200px'
         gap='1'

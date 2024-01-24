@@ -4,7 +4,6 @@ import {Container, Grid, GridItem} from "@chakra-ui/react";
 function SiteHeader() {
   return (
     <>
-    <Container pt={2} pb={2}>
       <Grid
         templateAreas={`"header"
                         "mainL mainR"`}
@@ -25,7 +24,7 @@ function SiteHeader() {
           Main Right
         </GridItem>
       </Grid>
-    </Container>
+
     {/* <Container maxW="50%" pt={2} pb={2} bg='green.400'>
       <Box w="400px" h="160px" bg="pink.100">
         <Image

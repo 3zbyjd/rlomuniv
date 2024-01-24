@@ -4,7 +4,7 @@ import LogIn from "./LogIn";
 function SiteHeader() {
   return (
     <>
-    <Container maxW="75%" pt={2} pb={2} bg='green.400'>
+    <Container maxW="50%" pt={2} pb={2} bg='green.400'>
       <Box w="400px" h="160px" bg="pink.100">
         <Image
           src="/assets/img/rlom_univ_logo.png"

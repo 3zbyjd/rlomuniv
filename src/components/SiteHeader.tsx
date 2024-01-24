@@ -11,7 +11,7 @@ function SiteHeader() {
           pb={2}
         />       
       </Box>
-      <Box bg="purple.100"><LogIn /></Box>
+      <Box w="400px" bg="purple.100"><LogIn /></Box>
     </Container>
   );
 }

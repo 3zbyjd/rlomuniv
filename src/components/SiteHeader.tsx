@@ -7,7 +7,7 @@ function SiteHeader() {
     <Container maxW="50%" pt={2} pb={2} bg='green.400'>
       <Grid
         templateAreas={`"header"
-                        "main main"
+                        "mainL"
                         "footer"`}
         gridTemplateRows={'50px 1fr 30px'}
         gridTemplateColumns={'150px 1fr'}
@@ -19,8 +19,8 @@ function SiteHeader() {
         <GridItem pl='2' bg='orange.300' area={'header'}>
           Header
         </GridItem>
-        <GridItem pl='2' bg='green.300' area={'main'}>
-          Main
+        <GridItem pl='2' bg='green.300' area={'mainL'}>
+          Main Left
         </GridItem>
         <GridItem pl='2' bg='blue.300' area={'footer'}>
           Footer

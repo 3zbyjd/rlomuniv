@@ -11,6 +11,7 @@ function SiteHeader() {
       gridTemplateRows={'50px 1fr 30px'}
       gridTemplateColumns={'150px 1fr'}
       h='200px'
+      maxW="100%"
       gap='1'
       color='blackAlpha.700'
       fontWeight='bold'

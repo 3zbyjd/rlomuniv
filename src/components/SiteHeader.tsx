@@ -19,6 +19,8 @@ function SiteHeader() {
             src="/assets/img/rlom_univ_logo.png"
             alt="RLOM University Logo"
             pb={2}
+            w="400px"
+            h="160px"
           /> 
         </GridItem>
         <GridItem pl='2' bg='green.300' area={'mainL'}>

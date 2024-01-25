@@ -1,16 +1,16 @@
-import {Grid, GridItem, Image} from "@chakra-ui/react";
+import {Container, Grid, GridItem, Image} from "@chakra-ui/react";
 import LogIn from "./LogIn";
 
 function SiteHeader() {
   return (
     <>
+    <Container>
       <Grid
         templateAreas={`"mainL header"
                         "mainL mainR"`}
         gridTemplateRows={'50px 1fr'}
         gridTemplateColumns={'400px 1fr'}
         h='200px'
-        maxW='container.sm'
         gap='1'
         color='blackAlpha.700'
         fontWeight='bold'
@@ -32,7 +32,7 @@ function SiteHeader() {
           Main Right
         </GridItem>
       </Grid>
-
+    </Container>
     {/* <Container maxW="50%" pt={2} pb={2} bg='green.400'>
       <Box w="400px" h="160px" bg="pink.100">
         <Image

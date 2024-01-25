@@ -4,7 +4,7 @@ import LogIn from "./LogIn";
 function SiteHeader() {
   return (
     <>
-    <Container maxW="container.lg">
+    <Container maxW="container.xl">
       <Grid
         templateAreas={`"mainL header"
                         "mainL mainR"`}

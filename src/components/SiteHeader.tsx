@@ -21,6 +21,7 @@ function SiteHeader() {
           <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
+              pt={2}
               pb={2}
               w="400px"
               h="160px"

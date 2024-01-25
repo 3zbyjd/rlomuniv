@@ -1,4 +1,4 @@
-import {Grid, GridItem} from "@chakra-ui/react";
+import {Grid, GridItem, Image} from "@chakra-ui/react";
 // import LogIn from "./LogIn";
 
 function SiteHeader() {
@@ -15,7 +15,11 @@ function SiteHeader() {
         fontWeight='bold'
       >
         <GridItem pl='2' bg='orange.300' area={'header'}>
-          Header
+          <Image
+            src="/assets/img/rlom_univ_logo.png"
+            alt="RLOM University Logo"
+            pb={2}
+          /> 
         </GridItem>
         <GridItem pl='2' bg='green.300' area={'mainL'}>
           Main Left

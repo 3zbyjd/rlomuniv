@@ -1,11 +1,11 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Button, Stack } from "@chakra-ui/react";
 import { BiSolidLogIn } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
 function LogIn() {
   return (
     <>
-      <Box>
+      <Stack direction="row" align="right" maxW=''>
         <Button colorScheme="purple" variant="outline">
           Log In&nbsp;
           <BiSolidLogIn />
@@ -14,7 +14,7 @@ function LogIn() {
           Sign Up&nbsp;
           <IoMdCreate />
         </Button>
-      </Box>
+      </Stack>
     </>
   );
 }

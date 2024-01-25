@@ -1,5 +1,5 @@
 import {Grid, GridItem, Image} from "@chakra-ui/react";
-// import LogIn from "./LogIn";
+import LogIn from "./LogIn";
 
 function SiteHeader() {
   return (
@@ -15,7 +15,7 @@ function SiteHeader() {
         fontWeight='bold'
       >
         <GridItem pl='2' bg='orange.300' area={'header'}>
-          Header
+          <LogIn />
         </GridItem>
         <GridItem pl='2' bg='green.300' area={'mainL'}>
           <Image

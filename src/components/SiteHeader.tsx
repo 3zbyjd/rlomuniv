@@ -8,7 +8,7 @@ function SiteHeader() {
         templateAreas={`"mainL header"
                         "mainL mainR"`}
         gridTemplateRows={'50px 1fr'}
-        gridTemplateColumns={'150px 1fr'}
+        gridTemplateColumns={'400px 1fr'}
         h='200px'
         gap='1'
         color='blackAlpha.700'

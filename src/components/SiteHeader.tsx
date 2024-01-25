@@ -4,7 +4,7 @@ import LogIn from "./LogIn";
 function SiteHeader() {
   return (
     <>
-    <Container>
+    <Container maxW="container.lg">
       <Grid
         templateAreas={`"mainL header"
                         "mainL mainR"`}
@@ -24,7 +24,6 @@ function SiteHeader() {
               alt="RLOM University Logo"
               pt={2}
               pb={2}
-              w="400px"
               h="160px"
             />
         </GridItem>

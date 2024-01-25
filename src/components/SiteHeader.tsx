@@ -15,10 +15,10 @@ function SiteHeader() {
         color='blackAlpha.700'
         fontWeight='bold'
       >
-        <GridItem pl='2' bg='orange.300' area={'header'}>
+        <GridItem pl='2' bg='orange.300' area={'Header'}>
           <LogIn />
         </GridItem>
-        <GridItem pl='2' bg='green.300' area={'mainL'}>
+        <GridItem pl='2' bg='green.300' area={'Logo'}>
           <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
@@ -27,7 +27,7 @@ function SiteHeader() {
               h="160px"
             />
         </GridItem>
-        <GridItem pl='2' bg='blue.300' area={'mainR'}>
+        <GridItem pl='2' bg='blue.300' area={'HeaderBody'}>
           Main Right
         </GridItem>
       </Grid>

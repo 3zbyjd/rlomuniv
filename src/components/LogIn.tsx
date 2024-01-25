@@ -5,7 +5,7 @@ import { IoMdCreate } from "react-icons/io";
 function LogIn() {
   return (
     <>
-      <Stack direction="row" align="right" maxW=''>
+      <Stack direction="row" align="right" maxW='' right='0'>
         <Button colorScheme="purple" variant="outline">
           Log In&nbsp;
           <BiSolidLogIn />

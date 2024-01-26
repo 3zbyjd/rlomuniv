@@ -11,7 +11,7 @@ function SiteHeader() {
                         "Logo HeaderBody"`}
         gridTemplateRows={'50px 1fr'}
         gridTemplateColumns={'400px 1fr'}
-        h='400px'
+        h='200px'
         gap='1'
         color='blackAlpha.700'
         fontWeight='bold'

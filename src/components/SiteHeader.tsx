@@ -11,7 +11,7 @@ function SiteHeader() {
                         "Logo HeaderBody"`}
         gridTemplateRows={'50px 1fr'}
         gridTemplateColumns={'400px 1fr'}
-        h='200px'
+        h='400px'
         gap='1'
         color='blackAlpha.700'
         fontWeight='bold'
@@ -21,7 +21,7 @@ function SiteHeader() {
             <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
-              p={2}
+              pt={2}
             />       
           </Box>
         </GridItem>

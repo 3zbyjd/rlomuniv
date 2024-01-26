@@ -9,23 +9,20 @@ function SiteHeader() {
       templateAreas={`"Logo Header"
                       "Logo HeaderBody"`}
       gridTemplateRows={'50px 1fr'}
-      gridTemplateColumns={'400px 1fr'}
+      gridTemplateColumns={'150px 1fr'}
       h='200px'
       gap='1'
       color='blackAlpha.700'
       fontWeight='bold'
     >
-      <GridItem pl='2' bg='orange.300' area={'header'}>
+      <GridItem pl='2' bg='orange.300' area={'Logo'}>
+        Logo
+      </GridItem>
+      <GridItem pl='2' bg='pink.300' area={'Header'}>
         Header
       </GridItem>
-      <GridItem pl='2' bg='pink.300' area={'nav'}>
-        Nav
-      </GridItem>
-      <GridItem pl='2' bg='green.300' area={'main'}>
-        Main
-      </GridItem>
-      <GridItem pl='2' bg='blue.300' area={'footer'}>
-        Footer
+      <GridItem pl='2' bg='green.300' area={'HeaderBody'}>
+        Header Body
       </GridItem>
     </Grid>
     {/* <Container maxW="50%" pt={2} pb={2} bg='green.400'>

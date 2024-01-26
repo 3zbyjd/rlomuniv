@@ -5,7 +5,7 @@ import {Center, Container, Grid, GridItem, Image} from "@chakra-ui/react";
 function SiteHeader() {
   return (
     <>
-    <Container maxW='container.xl'>
+    <Container maxW='container.xl' pt={2}>
       <Grid
         templateAreas={`"Logo Header"
                         "Logo HeaderBody"`}
@@ -21,7 +21,6 @@ function SiteHeader() {
             <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
-              // pt={6}
             />
           </Center>
         </GridItem>

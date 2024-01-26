@@ -20,7 +20,7 @@ function SiteHeader() {
             <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
-              pt={4}
+              pt={6}
             />
         </GridItem>
         <GridItem pl='2' bg='pink.300' area={'Header'}>

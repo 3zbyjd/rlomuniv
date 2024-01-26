@@ -1,5 +1,6 @@
-import {Box, Container, Grid, GridItem, Image} from "@chakra-ui/react";
-import LogIn from "./LogIn";
+import {Grid, GridItem} from "@chakra-ui/react";
+// import {Box, Container, Grid, GridItem, Image} from "@chakra-ui/react";
+// import LogIn from "./LogIn";
 
 function SiteHeader() {
   return (
@@ -28,7 +29,7 @@ function SiteHeader() {
         Footer
       </GridItem>
     </Grid>
-    <Container maxW="50%" pt={2} pb={2} bg='green.400'>
+    {/* <Container maxW="50%" pt={2} pb={2} bg='green.400'>
       <Box w="400px" h="160px" bg="pink.100">
         <Image
           src="/assets/img/rlom_univ_logo.png"
@@ -40,7 +41,7 @@ function SiteHeader() {
     </Container>
     <Container maxW="25%">
       <Box w="400px" bg="purple.100"><LogIn /></Box>
-    </Container>
+    </Container> */}
     </>
   );
 }

@@ -17,13 +17,11 @@ function SiteHeader() {
         fontWeight='bold'
       >
         <GridItem bg='orange.300' area={'Logo'}>
-          <Box w="400px" h="160px" bg="pink.100">
             <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
               pt={2}
-            />       
-          </Box>
+            />
         </GridItem>
         <GridItem pl='2' bg='pink.300' area={'Header'}>
           Header

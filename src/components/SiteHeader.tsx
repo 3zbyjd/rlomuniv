@@ -1,4 +1,4 @@
-import {Grid, GridItem, Image} from "@chakra-ui/react";
+import {Grid, GridItem} from "@chakra-ui/react";
 // import LogIn from "./LogIn";
 
 function SiteHeader() {

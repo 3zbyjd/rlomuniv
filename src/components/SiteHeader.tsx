@@ -17,7 +17,7 @@ function SiteHeader() {
         fontWeight='bold'
       >
         <GridItem bg='orange.300' area={'Logo'}>
-          <Center>
+          <Center h='200px'>
             <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"

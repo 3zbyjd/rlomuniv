@@ -1,4 +1,4 @@
-import {Box, Center, Container, Grid, GridItem, Image} from "@chakra-ui/react";
+import {Box, Center, Container, Flex, Grid, GridItem, Image, Spacer} from "@chakra-ui/react";
 import LogIn from "./LogIn";
 
 function SiteHeader() {
@@ -24,7 +24,7 @@ function SiteHeader() {
           </Center>
         </GridItem>
         <GridItem pl='2' bg='pink.300' area={'Header'}>
-          <Box pt={2} w='100%' alignContent='center' bg='red.100'><LogIn /></Box>
+          <Box><Flex><Spacer /><Box pt={2} w='100%'><LogIn /></Box></Flex></Box>
         </GridItem>
         <GridItem pl='2' bg='green.300' area={'HeaderBody'}>
           Header Body

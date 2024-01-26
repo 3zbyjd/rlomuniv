@@ -21,7 +21,7 @@ function SiteHeader() {
             <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
-              pb={2}
+              p={2}
             />       
           </Box>
         </GridItem>

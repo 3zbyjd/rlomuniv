@@ -16,19 +16,21 @@ function SiteHeader() {
         fontWeight='bold'
       >
         <GridItem pl='2' bg='orange.300' area={'Header'}>
+          Header
           {/* <LogIn /> */}
         </GridItem>
         <GridItem pl='2' bg='green.300' area={'Logo'}>
-          <Image
+          Logo
+          {/* <Image
               src="/assets/img/rlom_univ_logo.png"
               alt="RLOM University Logo"
-              // pt={2}
+              pt={2}
               pb={2}
               h="160px"
-            />
+            /> */}
         </GridItem>
         <GridItem pl='2' bg='blue.300' area={'HeaderBody'}>
-          Main Right
+          Header Body
         </GridItem>
       </Grid>
     {/* </Container> */}

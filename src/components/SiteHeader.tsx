@@ -1,40 +1,10 @@
-import {Grid, GridItem} from "@chakra-ui/react";
-// import LogIn from "./LogIn";
+import {Box, Container, Image} from "@chakra-ui/react";
+import LogIn from "./LogIn";
 
 function SiteHeader() {
   return (
     <>
-    {/* <Container maxW="container.xl"> */}
-      <Grid
-        templateAreas={`"mainL header"
-                        "mainL mainR"`}
-        gridTemplateRows={'50px 1fr'}
-        gridTemplateColumns={'400px 1fr'}
-        h='200px'
-        gap='1'
-        color='blackAlpha.700'
-        fontWeight='bold'
-      >
-        <GridItem pl='2' bg='orange.300' area={'Header'}>
-          Header
-          {/* <LogIn /> */}
-        </GridItem>
-        <GridItem pl='2' bg='green.300' area={'Logo'}>
-          Logo
-          {/* <Image
-              src="/assets/img/rlom_univ_logo.png"
-              alt="RLOM University Logo"
-              pt={2}
-              pb={2}
-              h="160px"
-            /> */}
-        </GridItem>
-        <GridItem pl='2' bg='blue.300' area={'HeaderBody'}>
-          Header Body
-        </GridItem>
-      </Grid>
-    {/* </Container> */}
-    {/* <Container maxW="50%" pt={2} pb={2} bg='green.400'>
+    <Container maxW="50%" pt={2} pb={2} bg='green.400'>
       <Box w="400px" h="160px" bg="pink.100">
         <Image
           src="/assets/img/rlom_univ_logo.png"
@@ -46,7 +16,7 @@ function SiteHeader() {
     </Container>
     <Container maxW="25%">
       <Box w="400px" bg="purple.100"><LogIn /></Box>
-    </Container> */}
+    </Container>
     </>
   );
 }

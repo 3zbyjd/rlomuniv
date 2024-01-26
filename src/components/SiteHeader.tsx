@@ -1,4 +1,4 @@
-import {Box, Container, Grid, GridItem, Image} from "@chakra-ui/react";
+import {Container, Grid, GridItem, Image} from "@chakra-ui/react";
 // import {Box, Container, Grid, GridItem, Image} from "@chakra-ui/react";
 // import LogIn from "./LogIn";
 

@@ -6,11 +6,11 @@ function LogIn() {
   return (
     <>
       <Stack direction="row" maxW=''>
-        <Button colorScheme="purple" variant="outline">
+        <Button colorScheme="purple" variant="solid">
           Log In&nbsp;
           <BiSolidLogIn />
         </Button>
-        <Button colorScheme="purple" variant="outline">
+        <Button colorScheme="purple" variant="solid">
           Sign Up&nbsp;
           <IoMdCreate />
         </Button>

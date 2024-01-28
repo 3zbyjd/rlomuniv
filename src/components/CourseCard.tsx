@@ -26,7 +26,7 @@ interface Props {
   courses: Course[];
 }
 
-const CourseList = ({ courses }: Props) => {
+const CourseCardList = ({ courses }: Props) => {
   return(
     <>
       <Container maxWidth="container.xl">
@@ -69,4 +69,4 @@ const CourseList = ({ courses }: Props) => {
   )
 }
 
-export default CourseList;
+export default CourseCardList;

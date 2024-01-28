@@ -49,7 +49,7 @@ function App() {
       imageSrc: "/assets/img/course_logos/business_table.jpg",
       courseHeading: "Living room Sofa",
       courseDescription: "Starting a business can be a very daunting task. This course will give you a step by step plan to start your own business.",
-      formattedCoursePrice: "$35"
+      formattedCoursePrice: "$65"
     },
   ]
 

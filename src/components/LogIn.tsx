@@ -4,7 +4,7 @@ import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
 // const [isAuthenticated, setAuthentication] = useState(false);
-let isAuthenticated = false;
+const isAuthenticated = false;
 
 function LogIn() {
 

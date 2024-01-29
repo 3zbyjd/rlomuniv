@@ -8,7 +8,7 @@ const isAuthenticated = false;
 
 function LogIn() {
 
-  if({isAuthenticated}) {
+  if({false}) {
     return (
       <>
         <Stack direction="row" maxW=''>

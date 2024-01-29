@@ -2,8 +2,6 @@ import { Button, Stack } from "@chakra-ui/react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
-let authenticated = false;
-
 function LogIn() {
   return (
     <>

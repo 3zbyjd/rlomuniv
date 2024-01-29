@@ -1,11 +1,16 @@
 import { Button, Stack } from "@chakra-ui/react";
+//import { useState } from "react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
+// const [isAuthenticated, setAuthentication] = useState(false);
+let isAuthenticated = false;
+
 function LogIn() {
+
   return (
     <>
-    if(!authenticated) {
+    if(!{isAuthenticated}) {
       <Stack direction="row" maxW=''>
         <Button colorScheme="purple" variant="solid">
           Log In&nbsp;
@@ -27,7 +32,7 @@ function LogIn() {
           <BiSolidLogOut />
         </Button>
       </Stack>
-  }
+    }
     </>
   );
 }

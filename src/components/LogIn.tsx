@@ -13,12 +13,12 @@ function LogIn() {
       <SimpleGrid columns={4} spacing={1} bg='gray.50'>
       <Box bg='tomato'></Box>
       <Box bg='tomato'></Box>
-      <Box bg='tomato' alignContent='end'>
+      <Box bg='tomato' left={10}>
         <text>
           Logged in as&#58; Demond
         </text>
       </Box>
-      <Box bg='tomato' alignContent='end'>
+      <Box bg='tomato' left={10}>
         <Button colorScheme="purple" variant="solid" size='xs'>
           Log Out&nbsp;
           <BiSolidLogOut />
@@ -34,13 +34,13 @@ function LogIn() {
     <SimpleGrid columns={4} spacing={1} bg='gray.50'>
     <Box bg='tomato'></Box>
     <Box bg='tomato'></Box>
-    <Box bg='tomato' alignItems='left'>
+    <Box bg='tomato' left={10}>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Log In&nbsp;
         <BiSolidLogIn />
       </Button>
     </Box>
-    <Box bg='tomato' alignItems='left'>
+    <Box bg='tomato'>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Sign Up&nbsp;
         <IoMdCreate />

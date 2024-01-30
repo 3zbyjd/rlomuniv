@@ -4,16 +4,18 @@ import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
 // const [isAuthenticated, setAuthentication] = useState(false);
-const isAuthenticated = false;
+
 
 function LogIn() {
 
-  if({false}) {
+  const isAuthenticated = false;
+
+  if({isAuthenticated}) {
     return (
       <>
         <Stack direction="row" maxW=''>
           <text>
-            You are signed in as: "Demond"
+            You are signed in as&#58; "Demond"
           </text>
           <Button colorScheme="purple" variant="solid">
             Log Out&nbsp;

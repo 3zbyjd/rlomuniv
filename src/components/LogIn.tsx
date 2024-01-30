@@ -17,7 +17,7 @@ function LogIn() {
           <text>
             Logged in as&#58; Demond
           </text>
-          <Button colorScheme="purple" variant="solid" size='sm'>
+          <Button colorScheme="purple" variant="solid" size='xs'>
             Log Out&nbsp;
             <BiSolidLogOut />
           </Button>
@@ -29,11 +29,11 @@ function LogIn() {
   return (
     <>
       <Stack direction='row' maxW=''>
-        <Button colorScheme='purple' variant='solid' size='sm'>
+        <Button colorScheme='purple' variant='solid' size='xs'>
           Log In&nbsp;
           <BiSolidLogIn />
         </Button>
-        <Button colorScheme='purple' variant='solid' size='sm'>
+        <Button colorScheme='purple' variant='solid' size='xs'>
           Sign Up&nbsp;
           <IoMdCreate />
         </Button>

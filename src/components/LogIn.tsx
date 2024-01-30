@@ -8,7 +8,7 @@ import { IoMdCreate } from "react-icons/io";
 
 function LogIn() {
 
-  let isAuthenticated: boolean = false;
+  let isAuthenticated: boolean = true;
 
   if(isAuthenticated) {
     return (

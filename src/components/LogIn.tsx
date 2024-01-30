@@ -13,7 +13,6 @@ function LogIn() {
   if(isAuthenticated) {
     return (
       <>
-        alert({isAuthenticated});
         <Stack direction="row" maxW=''>
           <text>
             You are signed in as&#58; "Demond"

@@ -1,4 +1,4 @@
-import {Box, Center, Container, Flex, Grid, GridItem, Image, Spacer} from "@chakra-ui/react";
+import {Center, Container, Grid, GridItem, Image} from "@chakra-ui/react";
 import LogIn from "./LogIn";
 
 function SiteHeader() {

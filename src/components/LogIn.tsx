@@ -10,7 +10,7 @@ function LogIn() {
   if(isAuthenticated) {
     return (
       <>
-      <SimpleGrid columns={4} spacing={0} bg='gray.50'>
+      <SimpleGrid columns={4} spacing={1} bg='gray.50'>
       <Box bg='tomato'></Box>
       <Box bg='tomato'></Box>
       <Box bg='tomato'>
@@ -31,7 +31,7 @@ function LogIn() {
 
   return (
     <>
-    <SimpleGrid columns={4} spacing={0} bg='gray.50'>
+    <SimpleGrid columns={4} spacing={1} bg='gray.50'>
     <Box bg='tomato'></Box>
     <Box bg='tomato'></Box>
     <Box bg='tomato'>

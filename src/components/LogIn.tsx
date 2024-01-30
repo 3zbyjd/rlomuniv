@@ -15,7 +15,7 @@ function LogIn() {
       <>
         <Stack direction="row" maxW=''>
           <text>
-            Logged in as&#58; "Demond"
+            Logged in as&#58; Demond
           </text>
           <Button colorScheme="purple" variant="solid">
             Log Out&nbsp;

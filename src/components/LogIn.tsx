@@ -10,15 +10,15 @@ function LogIn() {
   if(isAuthenticated) {
     return (
       <>
-      <SimpleGrid columns={4} spacing={0}>
-      <Box></Box>
-      <Box></Box>
-      <Box>
+      <SimpleGrid columns={4} spacing={0} bg='gray.50'>
+      <Box bg='tomato'></Box>
+      <Box bg='tomato'></Box>
+      <Box bg='tomato'>
         <text>
           Logged in as&#58; Demond
         </text>
       </Box>
-      <Box>
+      <Box bg='tomato'>
         <Button colorScheme="purple" variant="solid" size='xs'>
           Log Out&nbsp;
           <BiSolidLogOut />
@@ -31,16 +31,16 @@ function LogIn() {
 
   return (
     <>
-    <SimpleGrid columns={4} spacing={0}>
-    <Box></Box>
-    <Box></Box>
-    <Box>
+    <SimpleGrid columns={4} spacing={0} bg='gray.50'>
+    <Box bg='tomato'></Box>
+    <Box bg='tomato'></Box>
+    <Box bg='tomato'>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Log In&nbsp;
         <BiSolidLogIn />
       </Button>
     </Box>
-    <Box>
+    <Box bg='tomato'>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Sign Up&nbsp;
         <IoMdCreate />

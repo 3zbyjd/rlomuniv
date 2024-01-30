@@ -34,13 +34,13 @@ function LogIn() {
     <SimpleGrid columns={4} spacing={1} bg='gray.50'>
     <Box bg='tomato'></Box>
     <Box bg='tomato'></Box>
-    <Box bg='tomato' alignContent='end'>
+    <Box bg='tomato' alignItems='left'>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Log In&nbsp;
         <BiSolidLogIn />
       </Button>
     </Box>
-    <Box bg='tomato' alignContent='end'>
+    <Box bg='tomato' alignItems='left'>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Sign Up&nbsp;
         <IoMdCreate />

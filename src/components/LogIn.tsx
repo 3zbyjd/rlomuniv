@@ -10,7 +10,7 @@ function LogIn() {
 
   let isAuthenticated: boolean = false;
 
-  if({isAuthenticated}) {
+  if(isAuthenticated) {
     return (
       <>
         alert({isAuthenticated});

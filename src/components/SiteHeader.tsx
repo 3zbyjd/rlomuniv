@@ -24,7 +24,7 @@ function SiteHeader() {
             </Center>
           </GridItem>
           <GridItem pl='2' area={'Header'}>
-            <Box><Flex><Box pt={2} w='100%' /><Spacer /><Box pt={2} w='100%' /><Spacer /><Box pt={2} w='100%' /><Spacer /><Box pt={1.5}  pr={2} w='100%'><LogIn /></Box></Flex></Box>
+            <LogIn />
           </GridItem>
           <GridItem pl='2' area={'HeaderBody'}>
             

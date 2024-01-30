@@ -1,9 +1,6 @@
-import { Button, Stack } from "@chakra-ui/react";
-//import { useState } from "react";
+import { Box, Button, SimpleGrid, Stack } from "@chakra-ui/react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
-
-// const [isAuthenticated, setAuthentication] = useState(false);
 
 
 function LogIn() {
@@ -13,31 +10,43 @@ function LogIn() {
   if(isAuthenticated) {
     return (
       <>
-        <Stack direction="row" maxW=''>
-          <text>
-            Logged in as&#58; Demond
-          </text>
-          <Button colorScheme="purple" variant="solid" size='xs'>
-            Log Out&nbsp;
-            <BiSolidLogOut />
-          </Button>
-        </Stack>
+      <SimpleGrid columns={4} spacing={0}>
+      <Box></Box>
+      <Box></Box>
+      <Box>
+        <text>
+          Logged in as&#58; Demond
+        </text>
+      </Box>
+      <Box>
+        <Button colorScheme="purple" variant="solid" size='xs'>
+          Log Out&nbsp;
+          <BiSolidLogOut />
+        </Button>
+      </Box>
+      </SimpleGrid>        
       </>      
     );    
   }
 
   return (
     <>
-      <Stack direction='row' maxW=''>
-        <Button colorScheme='purple' variant='solid' size='xs'>
-          Log In&nbsp;
-          <BiSolidLogIn />
-        </Button>
-        <Button colorScheme='purple' variant='solid' size='xs'>
-          Sign Up&nbsp;
-          <IoMdCreate />
-        </Button>
-      </Stack>
+    <SimpleGrid columns={4} spacing={0}>
+    <Box></Box>
+    <Box></Box>
+    <Box>
+      <Button colorScheme='purple' variant='solid' size='xs'>
+        Log In&nbsp;
+        <BiSolidLogIn />
+      </Button>
+    </Box>
+    <Box>
+      <Button colorScheme='purple' variant='solid' size='xs'>
+        Sign Up&nbsp;
+        <IoMdCreate />
+      </Button>
+    </Box>
+    </SimpleGrid>
     </>
   );
 }

@@ -19,7 +19,7 @@ function LogIn() {
         </text>
       </Box>
       <Box bg='tomato'>
-        <Button colorScheme="purple" variant="solid" size='xs' position='fixed' right='30px'>
+        <Button colorScheme="purple" variant="solid" size='xs' position='relative' left='30px'>
           Log Out&nbsp;
           <BiSolidLogOut />
         </Button>

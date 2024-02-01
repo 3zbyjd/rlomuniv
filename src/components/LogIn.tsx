@@ -18,8 +18,8 @@ function LogIn() {
           Logged in as&#58; Demond
         </text>
       </Box>
-      <Box bg='tomato' left={10}>
-        <Button colorScheme="purple" variant="solid" size='xs'>
+      <Box bg='tomato'>
+        <Button colorScheme="purple" variant="solid" size='xs' position='absolute' right='0px'>
           Log Out&nbsp;
           <BiSolidLogOut />
         </Button>

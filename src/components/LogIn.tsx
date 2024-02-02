@@ -31,15 +31,15 @@ function LogIn() {
   return (
     <>
     <Grid templateColumns='repeat(4, 1fr)' gap={1}>
-      <GridItem bgColor='tomato'></GridItem>
-      <GridItem bgColor='tomato'></GridItem>
-      <GridItem bgColor='tomato'>
+      <GridItem></GridItem>
+      <GridItem></GridItem>
+      <GridItem>
         <Button colorScheme='purple' variant='solid' size='xs' position='relative' left='130px'>
           Log In&nbsp;
           <BiSolidLogIn />
         </Button>
       </GridItem>
-      <GridItem bgColor='tomato'>
+      <GridItem>
         <Button colorScheme='purple' variant='solid' size='xs' position='relative' left='130px'>
           Sign Up&nbsp;
           <IoMdCreate />

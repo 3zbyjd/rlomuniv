@@ -1,4 +1,4 @@
-import { Box, Button, Grid, GridItem } from "@chakra-ui/react";
+import { Button, Grid, GridItem } from "@chakra-ui/react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 

@@ -53,10 +53,58 @@ function App() {
     },
     {
       id: 7,
-      imageName: "When You Pray Book Cover",
+      imageName: "Prayer Logo 1",
       imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
       courseHeading: "When You Pray",
       courseDescription: "A Study of 6 Prayers in the Bible",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 8,
+      imageName: "Prayer Logo 2",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "21 Laws of Christian Leadership",
+      courseDescription: "21 Laws of Christian Leadership",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 9,
+      imageName: "Prayer Logo 3",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Finding Your Purpose",
+      courseDescription: "Finding Your Purpose",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 10,
+      imageName: "Prayer Logo 4",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "God Gave Gifts to the Church",
+      courseDescription: "God Gave Gifts to the Church",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 11,
+      imageName: "Prayer Logo 5",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Strengthening Your Faith",
+      courseDescription: "Strengthening Your Faith",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 12,
+      imageName: "Prayer Logo 5",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Choosing to Live for Christ Daily",
+      courseDescription: "Choosing to Live for Christ Daily",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 13,
+      imageName: "Prayer Logo 5",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Hearing God's Voice Over the Background Noise",
+      courseDescription: "Hearing God's Voice Over the Background Noise",
       formattedCoursePrice: "$24.99"
     },
   ]

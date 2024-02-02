@@ -17,7 +17,7 @@ function LogIn() {
             Logged in as&#58; Demond Roberson
           </text>
         </GridItem>
-        <GridItem bg='tomato'>
+        <GridItem>
           <Button colorScheme="purple" variant="solid" size='xs' position='relative' left='130px'>
             Log Out&nbsp;
             <BiSolidLogOut />

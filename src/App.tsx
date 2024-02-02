@@ -54,7 +54,7 @@ function App() {
     {
       id: 7,
       imageName: "When You Pray Book Cover",
-      imageSrc: "/assets/img/course_logos/When_You_Pray.jpg",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
       courseHeading: "When You Pray",
       courseDescription: "A Study of 6 Prayers in the Bible",
       formattedCoursePrice: "$24.99"

@@ -53,11 +53,11 @@ function App() {
     },
     {
       id: 7,
-      imageName: "Learn to plan and start your own business",
-      imageSrc: "/assets/img/course_logos/business_table.jpg",
-      courseHeading: "Living room Sofa",
-      courseDescription: "Starting a business can be a very daunting task. This course will give you a step by step plan to start your own business.",
-      formattedCoursePrice: "$65"
+      imageName: "When You Pray Book Cover",
+      imageSrc: "/assets/img/course_logos/When_You_Pray.jpg",
+      courseHeading: "When You Pray",
+      courseDescription: "A Study of 6 Prayers in the Bible",
+      formattedCoursePrice: "$24.99"
     },
   ]
 

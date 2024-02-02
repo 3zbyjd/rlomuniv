@@ -15,10 +15,10 @@ function LogIn() {
       <Box></Box>
       <Box>
         <text>
-          Logged in as&#58; Demond
+          Logged in as&#58; Demond Roberson
         </text>
       </Box>
-      <Box bg='tomato'>
+      <Box>
         <Button colorScheme="purple" variant="solid" size='xs' position='relative' left='130px'>
           Log Out&nbsp;
           <BiSolidLogOut />

@@ -11,14 +11,14 @@ function LogIn() {
     return (
       <>
       <Grid templateColumns='repeat(4, 1fr)' gap={1}>
-      <GridItem></GridItem>
-      <GridItem colSpan={2}></GridItem>
-      <GridItem>
+      <GridItem bg='tomato'></GridItem>
+      <GridItem bg='tomato' colSpan={2}></GridItem>
+      <GridItem bg='tomato'>
         <text>
           Logged in as&#58; Demond Roberson
         </text>
       </GridItem>
-      <GridItem>
+      <GridItem bg='tomato'>
         <Button colorScheme="purple" variant="solid" size='xs' position='relative' left='130px'>
           Log Out&nbsp;
           <BiSolidLogOut />

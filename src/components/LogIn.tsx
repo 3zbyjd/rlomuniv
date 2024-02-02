@@ -12,8 +12,8 @@ function LogIn() {
       <>
       <Grid templateColumns='repeat(4, 1fr)' gap={1}>
       <GridItem bg='tomato'></GridItem>
-      <GridItem bg='tomato' colSpan={2}></GridItem>
-      <GridItem bg='tomato'>
+      {/* <GridItem bg='tomato'></GridItem> */}
+      <GridItem bg='tomato' colSpan={2}>
         <text>
           Logged in as&#58; Demond Roberson
         </text>

@@ -1,4 +1,4 @@
-import { Box, Button, SimpleGrid } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem } from "@chakra-ui/react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
@@ -10,43 +10,43 @@ function LogIn() {
   if(isAuthenticated) {
     return (
       <>
-      <SimpleGrid columns={4} spacing={1} bg='gray.50'>
-      <Box></Box>
-      <Box></Box>
-      <Box>
+      <Grid templateColumns='repeat(4, 1fr)' gap={1}>
+      <GridItem></GridItem>
+      <GridItem></GridItem>
+      <GridItem colSpan={2}>
         <text>
           Logged in as&#58; Demond Roberson
         </text>
-      </Box>
-      <Box>
+      </GridItem>
+      <GridItem>
         <Button colorScheme="purple" variant="solid" size='xs' position='relative' left='130px'>
           Log Out&nbsp;
           <BiSolidLogOut />
         </Button>
-      </Box>
-      </SimpleGrid>        
+      </GridItem>
+      </Grid>        
       </>      
     );    
   }
 
   return (
     <>
-    <SimpleGrid columns={4} spacing={1}>
-    <Box></Box>
-    <Box></Box>
-    <Box>
+    <Grid templateColumns='repeat(4, 1fr)' gap={1}>
+    <GridItem></GridItem>
+    <GridItem></GridItem>
+    <GridItem>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Log In&nbsp;
         <BiSolidLogIn />
       </Button>
-    </Box>
-    <Box bg='tomato'>
+    </GridItem>
+    <GridItem>
       <Button colorScheme='purple' variant='solid' size='xs' position='relative' left='130px'>
         Sign Up&nbsp;
         <IoMdCreate />
       </Button>
-    </Box>
-    </SimpleGrid>
+    </GridItem>
+    </Grid>
     </>
   );
 }

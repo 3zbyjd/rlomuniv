@@ -11,9 +11,9 @@ function LogIn() {
     return (
       <>
       <SimpleGrid columns={4} spacing={1} bg='gray.50'>
-      <Box bg='tomato'></Box>
-      <Box bg='tomato'></Box>
-      <Box bg='tomato' left={10}>
+      <Box></Box>
+      <Box></Box>
+      <Box>
         <text>
           Logged in as&#58; Demond
         </text>
@@ -31,17 +31,17 @@ function LogIn() {
 
   return (
     <>
-    <SimpleGrid columns={4} spacing={1} bg='gray.50'>
-    <Box bg='tomato'></Box>
-    <Box bg='tomato'></Box>
-    <Box bg='tomato' right={10}>
+    <SimpleGrid columns={4} spacing={1}>
+    <Box></Box>
+    <Box></Box>
+    <Box>
       <Button colorScheme='purple' variant='solid' size='xs'>
         Log In&nbsp;
         <BiSolidLogIn />
       </Button>
     </Box>
     <Box bg='tomato'>
-      <Button colorScheme='purple' variant='solid' size='xs'>
+      <Button colorScheme='purple' variant='solid' size='xs' position='relative' left='130px'>
         Sign Up&nbsp;
         <IoMdCreate />
       </Button>

@@ -30,7 +30,7 @@ function LogIn() {
 
   return (
     <>
-    <Grid templateColumns='repeat(4, 1fr)'>
+    <Grid templateColumns='repeat(4, 1fr)' gap={1}>
       <GridItem bgColor='tomato'></GridItem>
       <GridItem bgColor='tomato'></GridItem>
       <GridItem bgColor='tomato'>

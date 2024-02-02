@@ -34,7 +34,7 @@ function LogIn() {
       <GridItem bgColor='tomato'></GridItem>
       <GridItem bgColor='tomato'></GridItem>
       <GridItem bgColor='tomato'>
-        <Button colorScheme='purple' variant='solid' size='xs'>
+        <Button colorScheme='purple' variant='solid' size='xs' position='relative' left='130px'>
           Log In&nbsp;
           <BiSolidLogIn />
         </Button>

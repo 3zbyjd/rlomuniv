@@ -140,7 +140,7 @@ function App() {
       formattedCoursePrice: "$24.99"
     },
     {
-      id: 17,
+      id: 18,
       imageName: "Prayer Logo 10",
       imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
       courseHeading: "Romans",

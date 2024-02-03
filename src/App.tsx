@@ -107,6 +107,46 @@ function App() {
       courseDescription: "Hearing God's Voice Over the Background Noise",
       formattedCoursePrice: "$24.99"
     },
+    {
+      id: 14,
+      imageName: "Prayer Logo 6",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Hearing God's Voice Over the Background Noise",
+      courseDescription: "Battlefield Of The Mind 2-in-1, Book and Study Guide",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 15,
+      imageName: "Prayer Logo 7",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Fundamentals of the Faith",
+      courseDescription: "Fundamentals of the Faith: 13 Lessons to Grow in the Grace & Knowledge of Jesus Christ",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 16,
+      imageName: "Prayer Logo 8",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Living as an Overcomer",
+      courseDescription: "Living as an Overcomer: Eternal Motivation for Earthly Success",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 17,
+      imageName: "Prayer Logo 9",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Revelation",
+      courseDescription: "Revelation: The Christian's Ultimate Victory",
+      formattedCoursePrice: "$24.99"
+    },
+    {
+      id: 17,
+      imageName: "Prayer Logo 10",
+      imageSrc: "/assets/img/course_logos/prayer_1065977915.jpg",
+      courseHeading: "Romans",
+      courseDescription: "Romans, MacArthur Bible Studies",
+      formattedCoursePrice: "$24.99"
+    },
   ]
 
   return (

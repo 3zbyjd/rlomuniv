@@ -152,7 +152,7 @@ function App() {
   return (
     <>
       <SiteHeader />
-      <CourseCardList courses={courses} />
+      <CourseCardList />
     </>
   );
 }

@@ -12,6 +12,8 @@ import {
   Text,
   Container,
 } from "@chakra-ui/react";
+import { useState } from "react";
+import courses from '/assets/course_catalog.json'
 
 interface Course {
   id: number;
@@ -22,11 +24,13 @@ interface Course {
   formattedCoursePrice: string;
 }
 
-interface Props {
+interface CourseCatalogProps {
   courses: Course[];
 }
 
-const CourseCardList = ({ courses }: Props) => {
+const [courses, setCourses] = useState([]);
+
+const CourseCardList = () => {
   return(
     <>
       <Container maxWidth="container.xl">

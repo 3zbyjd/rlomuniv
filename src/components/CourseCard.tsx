@@ -81,7 +81,7 @@ const CourseCardList = () => {
           <IconButton
             isRound={true}
             variant="solid"
-            colorScheme="teal"
+            colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
             icon={<FaAngleDoubleLeft />}
@@ -89,7 +89,7 @@ const CourseCardList = () => {
           <IconButton
             isRound={true}
             variant="solid"
-            colorScheme="teal"
+            colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
             icon={<FaAngleLeft />}
@@ -97,7 +97,7 @@ const CourseCardList = () => {
           <IconButton
             isRound={true}
             variant="solid"
-            colorScheme="teal"
+            colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
             icon={<FaAngleRight />}
@@ -105,7 +105,7 @@ const CourseCardList = () => {
           <IconButton
             isRound={true}
             variant="solid"
-            colorScheme="teal"
+            colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
             icon={<FaAngleDoubleRight />}

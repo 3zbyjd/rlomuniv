@@ -11,18 +11,25 @@ import {
   Stack,
   Text,
   Container,
+  IconButton,
 } from "@chakra-ui/react";
-import { useState } from "react";
+//import { useState } from "react";
+import {
+  FaAngleDoubleLeft,
+  FaAngleDoubleRight,
+  FaAngleLeft,
+  FaAngleRight,
+} from "react-icons/fa";
 import data from "../../public/assets/course_catalog.json";
 
-interface Course {
-  id: number;
-  imageName: string;
-  imageSrc: string;
-  courseHeading: string;
-  courseDescription: string;
-  formattedCoursePrice: string;
-}
+// interface Course {
+//   id: number;
+//   imageName: string;
+//   imageSrc: string;
+//   courseHeading: string;
+//   courseDescription: string;
+//   formattedCoursePrice: string;
+// }
 
 // interface Courses {
 //   courses: Course[];
@@ -69,6 +76,40 @@ const CourseCardList = () => {
               </CardFooter>
             </Card>
           ))}
+        </SimpleGrid>
+        <SimpleGrid columns={5} spacing={1}>
+          <IconButton
+            isRound={true}
+            variant="solid"
+            colorScheme="teal"
+            aria-label="Done"
+            fontSize="20px"
+            icon={<FaAngleDoubleLeft />}
+          />
+          <IconButton
+            isRound={true}
+            variant="solid"
+            colorScheme="teal"
+            aria-label="Done"
+            fontSize="20px"
+            icon={<FaAngleLeft />}
+          />
+          <IconButton
+            isRound={true}
+            variant="solid"
+            colorScheme="teal"
+            aria-label="Done"
+            fontSize="20px"
+            icon={<FaAngleRight />}
+          />
+          <IconButton
+            isRound={true}
+            variant="solid"
+            colorScheme="teal"
+            aria-label="Done"
+            fontSize="20px"
+            icon={<FaAngleDoubleRight />}
+          />
         </SimpleGrid>
       </Container>
     </>

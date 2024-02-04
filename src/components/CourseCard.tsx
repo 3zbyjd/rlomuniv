@@ -12,6 +12,7 @@ import {
   Text,
   Container,
   IconButton,
+  Center,
 } from "@chakra-ui/react";
 //import { useState } from "react";
 import {
@@ -77,13 +78,14 @@ const CourseCardList = () => {
             </Card>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={5} spacing={1} p={2}>
+        <SimpleGrid columns={5} spacing={1} p={2} alignContent="center">
           <IconButton
             isRound={true}
             variant="solid"
             colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
+            width="20px"
             icon={<FaAngleDoubleLeft />}
           />
           <IconButton

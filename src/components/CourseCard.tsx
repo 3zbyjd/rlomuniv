@@ -93,6 +93,7 @@ const CourseCardList = () => {
             colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
+            width="20px"
             icon={<FaAngleLeft />}
           />
           <IconButton
@@ -101,6 +102,7 @@ const CourseCardList = () => {
             colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
+            width="20px"
             icon={<FaAngleRight />}
           />
           <IconButton
@@ -109,6 +111,7 @@ const CourseCardList = () => {
             colorScheme="purple"
             aria-label="Done"
             fontSize="20px"
+            width="20px"
             icon={<FaAngleDoubleRight />}
           />
         </SimpleGrid>

@@ -12,33 +12,35 @@ import {
   Text,
   Container,
 } from "@chakra-ui/react";
-//import { useState } from "react";
-import data from '../../public/assets/course_catalog.json';
+import { useState } from "react";
+import data from "../../public/assets/course_catalog.json";
 
-// interface Course {
-//   id: number;
-//   imageName: string;
-//   imageSrc: string;
-//   courseHeading: string;
-//   courseDescription: string;
-//   formattedCoursePrice: string;
-// }
+interface Course {
+  id: number;
+  imageName: string;
+  imageSrc: string;
+  courseHeading: string;
+  courseDescription: string;
+  formattedCoursePrice: string;
+}
 
-// interface CourseCatalogProps {
-//   courseCatalog: Course[];
+// interface Courses {
+//   courses: Course[];
 // }
 
 //const [courses, setCourses] = useState(data);
+//const [currentPage, setCurrentPage] = useState(1);
+//const [courscesPerPage, setCoursesPerPage] = useState(8);
 
 const CourseCardList = () => {
-  return(
+  return (
     <>
       <Container maxWidth="container.xl">
         <SimpleGrid
           spacing={4}
           templateColumns="repeat(auto-fill, minmax(250px, 1fr))"
         >
-          {data.map(course => 
+          {data.map((course) => (
             <Card maxW="xs" key={course.id}>
               <CardBody>
                 <Image
@@ -66,11 +68,11 @@ const CourseCardList = () => {
                 </ButtonGroup>
               </CardFooter>
             </Card>
-            )}
+          ))}
         </SimpleGrid>
       </Container>
     </>
-  )
-}
+  );
+};
 
 export default CourseCardList;

@@ -77,7 +77,7 @@ const CourseCardList = () => {
             </Card>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={5} spacing={1}>
+        <SimpleGrid columns={5} spacing={1} p={2}>
           <IconButton
             isRound={true}
             variant="solid"

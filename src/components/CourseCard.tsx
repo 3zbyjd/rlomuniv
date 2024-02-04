@@ -12,23 +12,23 @@ import {
   Text,
   Container,
 } from "@chakra-ui/react";
-import { useState } from "react";
-import courses from '/assets/course_catalog.json'
+//import { useState } from "react";
+import data from '../../public/assets/course_catalog.json';
 
-interface Course {
-  id: number;
-  imageName: string;
-  imageSrc: string;
-  courseHeading: string;
-  courseDescription: string;
-  formattedCoursePrice: string;
-}
+// interface Course {
+//   id: number;
+//   imageName: string;
+//   imageSrc: string;
+//   courseHeading: string;
+//   courseDescription: string;
+//   formattedCoursePrice: string;
+// }
 
-interface CourseCatalogProps {
-  courses: Course[];
-}
+// interface CourseCatalogProps {
+//   courseCatalog: Course[];
+// }
 
-const [courses, setCourses] = useState([]);
+//const [courses, setCourses] = useState(data);
 
 const CourseCardList = () => {
   return(
@@ -38,7 +38,7 @@ const CourseCardList = () => {
           spacing={4}
           templateColumns="repeat(auto-fill, minmax(250px, 1fr))"
         >
-          {courses.map(course => 
+          {data.map(course => 
             <Card maxW="xs" key={course.id}>
               <CardBody>
                 <Image

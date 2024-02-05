@@ -36,15 +36,13 @@ import data from "../../public/assets/course_catalog.json";
 // }
 
 const CourseCardList = () => {
-const [currentPage, setCurrentPage] = useState(1);
-const recordsPerPage = 8;
-const lastIndex = currentPage * recordsPerPage;
-const firstIndex = lastIndex - recordsPerPage;
-const records = data.slice(firstIndex, lastIndex);
-const npage = Math.ceil(data.length / recordsPerPage);
-const numbers = [...Array(npage + 1).keys()].slice(1)
-
-const CourseCardList = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const recordsPerPage = 8;
+  const lastIndex = currentPage * recordsPerPage;
+  const firstIndex = lastIndex - recordsPerPage;
+  const records = data.slice(firstIndex, lastIndex);
+  const npage = Math.ceil(data.length / recordsPerPage);
+  const numbers = [...Array(npage + 1).keys()].slice(1);
   return (
     <>
       <Container maxWidth="container.xl">
@@ -101,7 +99,7 @@ const CourseCardList = () => {
             width="20px"
             icon={<FaAngleLeft />}
           />
-          <Text>{currentPage} / {npage}</Text>
+          <text>{currentPage} / {npage}</text>
           <IconButton
             isRound={true}
             variant="solid"

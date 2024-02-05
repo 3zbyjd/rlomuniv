@@ -13,7 +13,7 @@ import {
   Container,
   IconButton,
 } from "@chakra-ui/react";
-//import { useState } from "react";
+import { useState } from "react";
 import {
   FaAngleDoubleLeft,
   FaAngleDoubleRight,
@@ -35,9 +35,14 @@ import data from "../../public/assets/course_catalog.json";
 //   courses: Course[];
 // }
 
-//const [courses, setCourses] = useState(data);
-//const [currentPage, setCurrentPage] = useState(1);
-//const [courscesPerPage, setCoursesPerPage] = useState(8);
+const CourseCardList = () => {
+const [currentPage, setCurrentPage] = useState(1);
+const recordsPerPage = 8;
+const lastIndex = currentPage * recordsPerPage;
+const firstIndex = lastIndex - recordsPerPage;
+const records = data.slice(firstIndex, lastIndex);
+const npage = Math.ceil(data.length / recordsPerPage);
+const numbers = [...Array(npage + 1).keys()].slice(1)
 
 const CourseCardList = () => {
   return (
@@ -96,6 +101,7 @@ const CourseCardList = () => {
             width="20px"
             icon={<FaAngleLeft />}
           />
+          <Text>{currentPage} / {npage}</Text>
           <IconButton
             isRound={true}
             variant="solid"

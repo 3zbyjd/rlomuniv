@@ -43,6 +43,9 @@ const CourseCardList = () => {
   const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
   const numbers = [...Array(npage + 1).keys()].slice(1);
+
+  console.log(records + " " + numbers);
+
   return (
     <>
       <Container maxWidth="container.xl">
@@ -126,6 +129,16 @@ const CourseCardList = () => {
           />
         </SimpleGrid>
       </Container>
+      <IconButton
+        isRound={true}
+        variant="solid"
+        colorScheme="white"
+        aria-label="Done"
+        fontSize="20px"
+        width="20px"
+        icon={<FaAngleDoubleRight />}
+        onClick={() => setCurrentPage(1)}
+      />
     </>
   );
 };

@@ -89,6 +89,7 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleDoubleLeft />}
+            onClick={() => console.log("Double left arrow clicked")}
           />
           <IconButton
             isRound={true}
@@ -98,8 +99,11 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleLeft />}
+            onClick={() => console.log("Single left arrow clicked")}
           />
-          <text>{currentPage} / {npage}</text>
+          <text>
+            {currentPage} / {npage}
+          </text>
           <IconButton
             isRound={true}
             variant="solid"
@@ -108,6 +112,7 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleRight />}
+            onClick={() => console.log("Single right arrow clicked")}
           />
           <IconButton
             isRound={true}
@@ -117,6 +122,7 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleDoubleRight />}
+            onClick={() => console.log("Double right arrow clicked")}
           />
         </SimpleGrid>
       </Container>

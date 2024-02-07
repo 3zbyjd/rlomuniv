@@ -13,7 +13,7 @@ import {
   Container,
   IconButton,
 } from "@chakra-ui/react";
-import { useState, MouseEvent } from "react";
+import { useState } from "react";
 import {
   FaAngleDoubleLeft,
   FaAngleDoubleRight,

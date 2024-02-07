@@ -39,7 +39,7 @@ const CourseCardList = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   function handleLeftSingleArrowClick() {
-    console.log(currentPage);
+    console.log(currentPage > 1);
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
       console.log(currentPage);
@@ -47,8 +47,8 @@ const CourseCardList = () => {
   }
 
   function handleRightSingleArrowClick() {
-    console.log(currentPage);
-    if (!(currentPage < npage)) {
+    console.log(currentPage < npage);
+    if (currentPage < npage) {
       setCurrentPage(currentPage + 1);
       console.log(currentPage);
     }

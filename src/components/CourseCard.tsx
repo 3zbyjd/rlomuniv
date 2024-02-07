@@ -51,15 +51,15 @@ const CourseCardList = () => {
   }
 
   const recordsPerPage = 8;
-  const lastIndex = currentPage * recordsPerPage;
+  const lastIndex = currentPage * recordsPerPage - 1;
   const firstIndex = lastIndex - recordsPerPage;
   const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
   const numbers = [...Array(npage + 1).keys()].slice(1);
 
   console.log(records + " " + numbers);
-  console.log(data);
-  console.log(currentPage);
+  console.log(data.);
+  console.log("Current Page: " + currentPage);
   console.log("Last Index: " + lastIndex); // 8
   console.log("First Index: " + firstIndex); // 0
 

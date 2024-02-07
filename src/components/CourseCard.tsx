@@ -59,6 +59,8 @@ const CourseCardList = () => {
 
   console.log(records + " " + numbers);
   console.log(data);
+  console.log("Last Index: " + lastIndex);
+  console.log("First Index: " + firstIndex);
 
   return (
     <>

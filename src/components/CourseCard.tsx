@@ -41,12 +41,14 @@ const CourseCardList = () => {
   function handleLeftSingleArrowClick() {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      console.log(currentPage);
     }
   }
 
   function handleRightSingleArrowClick() {
     if (!(currentPage < npage)) {
       setCurrentPage(currentPage + 1);
+      console.log(currentPage);
     }
   }
 

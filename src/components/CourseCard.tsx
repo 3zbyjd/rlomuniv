@@ -39,18 +39,14 @@ const CourseCardList = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   function handleLeftSingleArrowClick() {
-    console.log(currentPage > 1);
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
-      console.log(currentPage);
     }
   }
 
   function handleRightSingleArrowClick() {
-    console.log(currentPage < npage);
     if (currentPage < npage) {
       setCurrentPage(currentPage + 1);
-      console.log(currentPage);
     }
   }
 
@@ -62,6 +58,7 @@ const CourseCardList = () => {
   const numbers = [...Array(npage + 1).keys()].slice(1);
 
   console.log(records + " " + numbers);
+  console.log(data);
 
   return (
     <>

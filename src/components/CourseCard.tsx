@@ -52,7 +52,7 @@ const CourseCardList = () => {
 
   const recordsPerPage = 8;
   const lastIndex = currentPage * recordsPerPage - 1;
-  const firstIndex = lastIndex - recordsPerPage;
+  const firstIndex = lastIndex - recordsPerPage + 1;
   const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
   const numbers = [...Array(npage + 1).keys()].slice(1);

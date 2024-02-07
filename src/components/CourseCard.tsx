@@ -13,7 +13,7 @@ import {
   Container,
   IconButton,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, MouseEvent } from "react";
 import {
   FaAngleDoubleLeft,
   FaAngleDoubleRight,
@@ -37,6 +37,19 @@ import data from "../../public/assets/course_catalog.json";
 
 const CourseCardList = () => {
   const [currentPage, setCurrentPage] = useState(1);
+
+  function handleLeftSingleArrowClick() {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  }
+
+  function handleRightSingleArrowClick() {
+    if (!(currentPage < npage)) {
+      setCurrentPage(currentPage + 1);
+    }
+  }
+
   const recordsPerPage = 8;
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
@@ -92,7 +105,7 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleDoubleLeft />}
-            onClick={() => console.log("Double left arrow clicked")}
+            onClick={() => setCurrentPage(1)}
           />
           <IconButton
             isRound={true}
@@ -102,7 +115,7 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleLeft />}
-            onClick={() => console.log("Single left arrow clicked")}
+            onClick={handleLeftSingleArrowClick}
           />
           <text>
             {currentPage} / {npage}
@@ -115,7 +128,7 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleRight />}
-            onClick={() => console.log("Single right arrow clicked")}
+            onClick={handleRightSingleArrowClick}
           />
           <IconButton
             isRound={true}
@@ -125,7 +138,7 @@ const CourseCardList = () => {
             fontSize="20px"
             width="20px"
             icon={<FaAngleDoubleRight />}
-            onClick={() => console.log("Double right arrow clicked")}
+            onClick={() => setCurrentPage(npage)}
           />
         </SimpleGrid>
       </Container>

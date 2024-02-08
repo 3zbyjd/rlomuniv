@@ -63,8 +63,8 @@ const CourseCardList = () => {
   console.log("Last Index: " + lastIndex); // 8
   console.log("First Index: " + firstIndex); // 0
 
-  let testData = Array.from(data);
-  testData.forEach((element) => console.log(element));
+  const courses = Array.from(data);
+  courses.forEach((element) => console.log(element));
 
   return (
     <>

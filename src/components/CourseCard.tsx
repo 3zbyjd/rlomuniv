@@ -63,6 +63,9 @@ const CourseCardList = () => {
   console.log("Last Index: " + lastIndex); // 8
   console.log("First Index: " + firstIndex); // 0
 
+  let testData = Array.from(data);
+  console.log(testData);
+
   return (
     <>
       <Container maxWidth="container.xl">

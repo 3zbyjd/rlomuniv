@@ -64,7 +64,7 @@ const CourseCardList = () => {
   console.log("First Index: " + firstIndex); // 0
 
   let testData = Array.from(data);
-  console.log(testData);
+  testData.forEach((element) => console.log(element));
 
   return (
     <>

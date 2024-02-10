@@ -12,28 +12,14 @@ import {
   Text,
   Container,
 } from "@chakra-ui/react";
-// import {
-//   FaAngleDoubleLeft,
-//   FaAngleDoubleRight,
-//   FaAngleLeft,
-//   FaAngleRight,
-// } from "react-icons/fa";
+import Pagination from "./pagination";
 import data from "../../public/assets/course_catalog.json";
-
-// interface Course {
-//   id: number;
-//   imageName: string;
-//   imageSrc: string;
-//   courseHeading: string;
-//   courseDescription: string;
-//   formattedCoursePrice: string;
-// }
-
-// interface Courses {
-//   courses: Course[];
-// }
+import { useState } from "react";
 
 const CourseCardList = () => {
+  const pageLimit = 8;
+  const [itemList, setItemlist] = useState([]);
+
   return (
     <>
       <Container maxWidth="container.xl">

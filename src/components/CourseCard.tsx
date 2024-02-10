@@ -11,15 +11,13 @@ import {
   Stack,
   Text,
   Container,
-  IconButton,
 } from "@chakra-ui/react";
-import { useState } from "react";
-import {
-  FaAngleDoubleLeft,
-  FaAngleDoubleRight,
-  FaAngleLeft,
-  FaAngleRight,
-} from "react-icons/fa";
+// import {
+//   FaAngleDoubleLeft,
+//   FaAngleDoubleRight,
+//   FaAngleLeft,
+//   FaAngleRight,
+// } from "react-icons/fa";
 import data from "../../public/assets/course_catalog.json";
 
 // interface Course {
@@ -36,36 +34,6 @@ import data from "../../public/assets/course_catalog.json";
 // }
 
 const CourseCardList = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-
-  function handleLeftSingleArrowClick() {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  }
-
-  function handleRightSingleArrowClick() {
-    if (currentPage < npage) {
-      setCurrentPage(currentPage + 1);
-    }
-  }
-
-  const recordsPerPage = 8;
-  const lastIndex = currentPage * recordsPerPage - 1;
-  const firstIndex = lastIndex - recordsPerPage + 1;
-  const records = data.slice(firstIndex, lastIndex);
-  const npage = Math.ceil(data.length / recordsPerPage);
-  const numbers = [...Array(npage + 1).keys()].slice(1);
-
-  console.log(records + " " + numbers);
-  console.log(data);
-  console.log("Current Page: " + currentPage);
-  console.log("Last Index: " + lastIndex); // 8
-  console.log("First Index: " + firstIndex); // 0
-
-  let testData = Array.from(data);
-  testData.forEach((element) => console.log(element));
-
   return (
     <>
       <Container maxWidth="container.xl">
@@ -103,62 +71,7 @@ const CourseCardList = () => {
             </Card>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={5} spacing={1} p={2} alignContent="center">
-          <IconButton
-            isRound={true}
-            variant="solid"
-            colorScheme="purple"
-            aria-label="Done"
-            fontSize="20px"
-            width="20px"
-            icon={<FaAngleDoubleLeft />}
-            onClick={() => setCurrentPage(1)}
-          />
-          <IconButton
-            isRound={true}
-            variant="solid"
-            colorScheme="purple"
-            aria-label="Done"
-            fontSize="20px"
-            width="20px"
-            icon={<FaAngleLeft />}
-            onClick={handleLeftSingleArrowClick}
-          />
-          <text>
-            {currentPage} / {npage}
-          </text>
-          <IconButton
-            isRound={true}
-            variant="solid"
-            colorScheme="purple"
-            aria-label="Done"
-            fontSize="20px"
-            width="20px"
-            icon={<FaAngleRight />}
-            onClick={handleRightSingleArrowClick}
-          />
-          <IconButton
-            isRound={true}
-            variant="solid"
-            colorScheme="purple"
-            aria-label="Done"
-            fontSize="20px"
-            width="20px"
-            icon={<FaAngleDoubleRight />}
-            onClick={() => setCurrentPage(npage)}
-          />
-        </SimpleGrid>
       </Container>
-      <IconButton
-        isRound={true}
-        variant="solid"
-        colorScheme="white"
-        aria-label="Done"
-        fontSize="20px"
-        width="20px"
-        icon={<FaAngleDoubleRight />}
-        onClick={() => setCurrentPage(1)}
-      />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { IconButton, SimpleGrid } from "@chakra-ui/react";
+import { IconButton, Input, SimpleGrid } from "@chakra-ui/react";
 import { useEffect } from "react";
 import {
   FaAngleDoubleLeft,
@@ -38,9 +38,11 @@ const Pagination = (props: any) => {
         icon={<FaAngleLeft />}
         onClick={previousPage}
       />
-      {/* <text>
-          {currentPage} / {npage}
-        </text> */}
+      <Input
+        value={pageNumber}
+        onChange={(e) => changePage(e.target.valueAsNumber)}
+        type="number"
+      />
       <IconButton
         isRound={true}
         variant="solid"

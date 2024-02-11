@@ -16,6 +16,15 @@ import Pagination from "./pagination";
 import data from "../../public/assets/course_catalog.json";
 import { useState } from "react";
 
+// interface CourseProp {
+//   id: number;
+//   imageName: string;
+//   imageSrc: string;
+//   courseHeading: string;
+//   courseDescription: string;
+//   formattedCoursePrice: number;
+// }
+
 const CourseCardList = () => {
   const pageLimit = 8;
   const [courseList, setCourselist] = useState([]);
@@ -67,7 +76,7 @@ const CourseCardList = () => {
       <div>
         <ul>
           {courseList.map((course, i) => (
-            <li key={i}>{course}</li>
+            <li key={i}>{course[i]}</li>
           ))}
         </ul>
         <Pagination

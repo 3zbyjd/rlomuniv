@@ -76,7 +76,7 @@ const CourseCardList = () => {
       <div>
         <ul>
           {courseList.map((course, i) => (
-            <li key={i}>{course}</li>
+            <li key={i}>{course[i]}</li>
           ))}
         </ul>
         <Pagination

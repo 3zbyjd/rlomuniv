@@ -72,11 +72,11 @@ const CourseCardList = () => {
           setPageItems = {setCourselist}
         />
       </Container> */}
-      {courseList.map((course) => console.log(course[0]))}
+      {courseList.map((course) => console.log(course))}
       <div>
         <ul>
           {courseList.map((course, i) => (
-            <li key={i}>{course[i]}</li>
+            <li key={i}>{course}</li>
           ))}
         </ul>
         <Pagination

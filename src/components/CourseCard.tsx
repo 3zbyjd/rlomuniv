@@ -63,7 +63,7 @@ const CourseCardList = () => {
           setPageItems = {setCourselist}
         />
       </Container> */}
-      {console.log(courseList.map)}
+      {console.log(courseList)}
       <div>
         <ul>
           {courseList.map((course, i) => (

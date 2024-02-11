@@ -1,34 +1,34 @@
-import {
-  Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardFooter,
-  Divider,
-  Heading,
-  Image,
-  SimpleGrid,
-  Stack,
-  Text,
-  Container,
-} from "@chakra-ui/react";
+// import {
+//   Button,
+//   ButtonGroup,
+//   Card,
+//   CardBody,
+//   CardFooter,
+//   Divider,
+//   Heading,
+//   Image,
+//   SimpleGrid,
+//   Stack,
+//   Text,
+//   Container,
+// } from "@chakra-ui/react";
 import Pagination from "./pagination";
 import data from "../../public/assets/course_catalog.json";
 import { useState } from "react";
 
 const CourseCardList = () => {
   const pageLimit = 8;
-  const [itemList, setItemlist] = useState([]);
+  const [courseList, setCourselist] = useState([]);
 
   return (
     <>
-      <Container maxWidth="container.xl">
+      {/* <Container maxWidth="container.xl">
         <SimpleGrid
           spacing={4}
           templateColumns="repeat(auto-fill, minmax(250px, 1fr))"
         >
-          {data.map((course) => (
-            <Card maxW="xs" key={course.id}>
+          {courseList.map((course) => (
+            <Card maxW="xs" key={course}>
               <CardBody>
                 <Image
                   src={course.imageSrc}
@@ -57,7 +57,24 @@ const CourseCardList = () => {
             </Card>
           ))}
         </SimpleGrid>
-      </Container>
+        <Pagination
+          items={data}
+          pageLimit = {pageLimit}
+          setPageItems = {setCourselist}
+        />
+      </Container> */}
+      <div>
+        <ul>
+          {courseList.map((course, i) => (
+            <li key={i}>{course}</li>
+          ))}
+        </ul>
+        <Pagination
+          items={data}
+          pageLimit={pageLimit}
+          setPageItems={setCourselist}
+        />
+      </div>
     </>
   );
 };

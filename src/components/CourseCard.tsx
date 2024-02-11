@@ -82,8 +82,7 @@ const CourseCardList = () => {
         <Pagination
           items={data}
           pageLimit={pageLimit}
-          //setPageItems={setCourselist}
-          setPageItems={() => console.log(setCourselist)}
+          setPageItems={setCourselist}
         />
       </div>
     </>

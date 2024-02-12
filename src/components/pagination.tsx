@@ -9,8 +9,14 @@ import {
 import usePagination from "./usePagination";
 
 const Pagination = (props: any) => {
-  const { pageNumber, changePage, pageData, nextPage, previousPage } =
-    usePagination(props.items, props.pageLimit);
+  const {
+    pageNumber,
+    pageCount,
+    changePage,
+    pageData,
+    nextPage,
+    previousPage,
+  } = usePagination(props.items, props.pageLimit);
 
   useEffect(() => {
     props.setPageItems(pageData);
@@ -61,7 +67,7 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleDoubleRight />}
-        onClick={() => console.log(props.pageCount)}
+        onClick={() => console.log(pageCount)}
       />
     </SimpleGrid>
   );

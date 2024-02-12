@@ -48,8 +48,6 @@ const Pagination = (props: any) => {
         value={pageNumber}
         onChange={(e) => changePage(e.target.valueAsNumber)}
         type="number"
-        alignContent="center"
-        width="20px"
       />
       <IconButton
         isRound={true}

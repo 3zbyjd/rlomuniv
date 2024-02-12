@@ -32,7 +32,7 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleDoubleLeft />}
-        onClick={() => changePage(1)}
+        onClick={() => changePage(0)}
       />
       <IconButton
         isRound={true}
@@ -67,7 +67,7 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleDoubleRight />}
-        onClick={() => changePage(pageCount)}
+        onClick={() => changePage(pageCount - 1)}
       />
     </SimpleGrid>
   );

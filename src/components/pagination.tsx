@@ -1,4 +1,4 @@
-import { Center, IconButton, Input, SimpleGrid } from "@chakra-ui/react";
+import { IconButton, Input, SimpleGrid } from "@chakra-ui/react";
 import { useEffect } from "react";
 import {
   FaAngleDoubleLeft,

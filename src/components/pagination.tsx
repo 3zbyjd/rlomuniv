@@ -61,7 +61,7 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleDoubleRight />}
-        onClick={props.pageCount}
+        onClick={() => console.log(props.pageCount)}
       />
     </SimpleGrid>
   );

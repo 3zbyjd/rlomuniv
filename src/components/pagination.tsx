@@ -57,6 +57,7 @@ const Pagination = (props: any) => {
         type="number"
         size="sm"
         borderColor="purple"
+        textAlign="center"
       />
       <IconButton
         isRound={true}

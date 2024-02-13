@@ -37,6 +37,7 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleDoubleLeft />}
+        size="sm"
         onClick={() => changePage(0)}
       />
       <IconButton
@@ -47,12 +48,14 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleLeft />}
+        size="sm"
         onClick={previousPage}
       />
       <Input
         value={pageNumber}
         onChange={(e) => changePage(e.target.valueAsNumber)}
         type="number"
+        size="sm"
         borderColor="purple"
       />
       <IconButton
@@ -63,6 +66,7 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleRight />}
+        size="sm"
         onClick={nextPage}
       />
       <IconButton
@@ -73,6 +77,7 @@ const Pagination = (props: any) => {
         fontSize="20px"
         width="20px"
         icon={<FaAngleDoubleRight />}
+        size="sm"
         onClick={() => changePage(pageCount - 1)}
       />
     </SimpleGrid>

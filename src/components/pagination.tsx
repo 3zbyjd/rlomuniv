@@ -55,7 +55,7 @@ const Pagination = (props: any) => {
         value={pageNumber}
         onChange={(e) => changePage(e.target.valueAsNumber)}
         type="number"
-        width="40px"
+        width="50px"
         size="sm"
         borderColor="purple"
         textAlign="center"

@@ -47,7 +47,7 @@ const CourseCardList = () => {
                 <Stack mt="6" spacing="3">
                   <Heading size="md">{course.courseHeading}</Heading>
                   <Text>{course.courseDescription}</Text>
-                  <Text color="blue.600" fontSize="2xl">
+                  <Text color="purple" fontSize="2xl">
                     {course.formattedCoursePrice}
                   </Text>
                 </Stack>
@@ -55,10 +55,10 @@ const CourseCardList = () => {
               <Divider />
               <CardFooter>
                 <ButtonGroup spacing="2">
-                  <Button variant="solid" colorScheme="blue">
+                  <Button variant="solid" colorScheme="purple">
                     Buy now
                   </Button>
-                  <Button variant="ghost" colorScheme="blue">
+                  <Button variant="ghost" colorScheme="purple">
                     Add to cart
                   </Button>
                 </ButtonGroup>

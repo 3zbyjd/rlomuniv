@@ -27,8 +27,7 @@ const Pagination = (props: any) => {
       columns={5}
       spacing={1}
       p={2}
-      alignContent="center"
-      borderColor="red"
+      //alignContent="center"
     >
       <IconButton
         isRound={true}

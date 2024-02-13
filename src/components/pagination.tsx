@@ -23,7 +23,13 @@ const Pagination = (props: any) => {
   }, [pageNumber]);
 
   return (
-    <SimpleGrid columns={5} spacing={1} p={2} alignContent="center">
+    <SimpleGrid
+      columns={5}
+      spacing={1}
+      p={2}
+      alignContent="center"
+      borderColor="red"
+    >
       <IconButton
         isRound={true}
         variant="solid"
@@ -48,6 +54,7 @@ const Pagination = (props: any) => {
         value={pageNumber}
         onChange={(e) => changePage(e.target.valueAsNumber)}
         type="number"
+        borderColor="purple"
       />
       <IconButton
         isRound={true}

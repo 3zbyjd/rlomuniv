@@ -1,5 +1,5 @@
-import CourseCardList from "./components/CourseCard";
-import SiteHeader from "./components/SiteHeader";
+import CourseCardList from "../components/CourseCard";
+import SiteHeader from "../components/SiteHeader";
 
 function App() {
   return (

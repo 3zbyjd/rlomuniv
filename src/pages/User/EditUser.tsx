@@ -1,4 +1,4 @@
-import { FormControl, FormHelperText, FormLabel } from "@chakra-ui/react";
+import { FormControl, FormLabel } from "@chakra-ui/react";
 import UserType from "../../components/UserType";
 
 function User() {

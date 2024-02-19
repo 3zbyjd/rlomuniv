@@ -14,7 +14,7 @@ setUserType;
 
     return(
         <>
-            <Select placeholder='Select option'>
+            <Select placeholder='Select user type'>
                 {userType.map((ut) => (
                     <option key={ut.id} value={ut.userType}>{ut.userType}</option>
                 ))}

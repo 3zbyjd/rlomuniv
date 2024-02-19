@@ -1,7 +1,7 @@
 import { FormControl, FormLabel } from "@chakra-ui/react";
 import UserType from "../../components/UserType";
 
-function User() {
+function EditUser() {
     return (
         <>
             <FormControl>
@@ -31,4 +31,4 @@ function User() {
     )
 }
 
-export default User;
+export default EditUser;

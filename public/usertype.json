@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "userType": "Director"
+    },
+    {
+        "id": "2",
+        "userType": "Director Assistant"
+    },
+    {
+        "id": "3",
+        "userType": "Bursar"
+    },
+    {
+        "id": "4",
+        "userType": "Financial Aid Counselor"
+    },
+    {
+        "id": "5",
+        "userType": "Instructor"
+    },
+    {
+        "id": "6",
+        "userType": "Instructor Assistant"
+    },
+    {
+        "id": "7",
+        "userType": "Student"
+    },
+    {
+        "id": "8",
+        "userType": "System Administrator"
+    }
+]

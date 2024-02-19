@@ -1,0 +1,47 @@
+[
+    {
+        "username":"emmajean",
+        "firstname":"Emma",
+        "lastname": "White",
+        "email": "emmas4daughters@aol.com",
+        "address1": "154 Forest Home Drive",
+        "address2": "",
+        "phone1": "(256)565-3511",
+        "userType":"Directory",
+        "password": "Test1234"
+    },
+    {
+        "username":"jemmajean",
+        "firstname":"Jemeana",
+        "lastname": "Roberson",
+        "email": "jemeana@me.com",
+        "address1": "158 Dustin Lane",
+        "address2": "",
+        "phone1": "(256)655-8237",
+        "userType":"Directory Assistant",
+        "password": "Test1234"
+    },
+    {
+        "username":"kcobb0305",
+        "firstname":"Jemeana",
+        "lastname": "Roberson",
+        "email": "kmsmoth0305@yahoo.com",
+        "address1": "158 Dustin Lane",
+        "address2": "",
+        "phone1": "(256)655-8237",
+        "userType":"Directory Assistant",
+        "password": "Test1234"
+    },
+    {
+        "username":"graydad6374",
+        "firstname":"Demond",
+        "lastname": "Roberson",
+        "email": "demond.roberson@gmail.com",
+        "address1": "158 Dustin Lane",
+        "address2": "",
+        "phone1": "(256)655-2159",
+        "userType":"System Administrator",
+        "password": "Test1234"
+    }
+    
+]

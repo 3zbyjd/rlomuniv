@@ -21,7 +21,7 @@ function EditUser() {
         bg="#ddccff"
         maxW="40%"
         padding="4"
-        marginTop="5px"
+        marginTop="15px"
         marginLeft="auto"
         marginRight="auto"
         borderRadius="md"

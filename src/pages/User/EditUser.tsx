@@ -20,7 +20,8 @@ function EditUser() {
       <Box
         bg="#ddccff"
         maxW="40%"
-        paddingTop="5"
+        padding="4"
+        marginTop="5px"
         marginLeft="auto"
         marginRight="auto"
         borderRadius="md"

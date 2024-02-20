@@ -16,7 +16,12 @@ function EditUser() {
   return (
     <>
       <SiteHeader />
-      <Divider orientation="horizontal" bg="#4d4c4c" height="2" />
+      <Divider
+        orientation="horizontal"
+        bg="#4d4c4c"
+        height="2"
+        paddingTop="5px"
+      />
       <Box
         bg="#ddccff"
         maxW="40%"

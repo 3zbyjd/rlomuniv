@@ -9,10 +9,12 @@ import {
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import UserType from "../../components/UserType";
+import SiteHeader from "../../components/SiteHeader";
 
 function EditUser() {
   return (
     <>
+      <SiteHeader />
       <Box
         bg="#ddccff"
         maxW="80%"

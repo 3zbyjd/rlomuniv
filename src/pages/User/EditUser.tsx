@@ -17,7 +17,7 @@ function EditUser() {
       <SiteHeader />
       <Box
         bg="#ddccff"
-        maxW="80%"
+        maxW="40%"
         padding="4"
         marginLeft="auto"
         marginRight="auto"

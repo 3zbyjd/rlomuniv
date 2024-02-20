@@ -10,7 +10,7 @@ function App() {
         orientation="horizontal"
         bg="#4d4c4c"
         height="2"
-        paddingBottom="25px"
+        marginBottom="25px"
       />
       <CourseCardList />
     </>

@@ -21,6 +21,7 @@ function EditUser() {
         padding="4"
         marginLeft="auto"
         marginRight="auto"
+        borderRadius="md"
       >
         <FormControl>
           <FormLabel>

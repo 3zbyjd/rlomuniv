@@ -13,7 +13,13 @@ import UserType from "../../components/UserType";
 function EditUser() {
   return (
     <>
-      <Box bg="#ddccff" maxW="80%" padding="4">
+      <Box
+        bg="#ddccff"
+        maxW="80%"
+        padding="4"
+        marginLeft="auto"
+        marginRight="auto"
+      >
         <FormControl>
           <FormLabel>
             First Name

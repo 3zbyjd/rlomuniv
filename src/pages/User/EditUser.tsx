@@ -19,7 +19,7 @@ function EditUser() {
       <SiteHeader />
       <Divider orientation="horizontal" bg="#4d4c4c" height="2" />
       <Box
-        bg="#f2f2f2"
+        bg="grey"
         maxW="40%"
         padding="4"
         marginTop="25px"
@@ -36,7 +36,7 @@ function EditUser() {
             <Input
               type="text"
               placeholder="Enter Firstname"
-              focusBorderColor="purple"
+              focusBorderColor="Red"
             />
           </FormLabel>
 
@@ -46,7 +46,7 @@ function EditUser() {
             <Input
               type="text"
               placeholder="Enter Firstname"
-              focusBorderColor="purple"
+              focusBorderColor="Red"
             />
           </FormLabel>
 
@@ -60,7 +60,7 @@ function EditUser() {
               <Input
                 type="email"
                 placeholder="Enter Email"
-                focusBorderColor="purple"
+                focusBorderColor="Red"
               />
             </InputGroup>
           </FormLabel>
@@ -75,7 +75,7 @@ function EditUser() {
               <Input
                 type="tel"
                 placeholder="Enter Phone Number"
-                focusBorderColor="purple"
+                focusBorderColor="Red"
               />
             </InputGroup>
           </FormLabel>
@@ -90,7 +90,7 @@ function EditUser() {
               <Input
                 type="text"
                 placeholder="Enter Mailing Address"
-                focusBorderColor="purple"
+                focusBorderColor="Red"
               />
             </InputGroup>
           </FormLabel>
@@ -105,14 +105,14 @@ function EditUser() {
               <Input
                 type="text"
                 placeholder="Enter Apt/Suite Number"
-                focusBorderColor="purple"
+                focusBorderColor="Red"
               />
             </InputGroup>
           </FormLabel>
 
           <UserType />
 
-          <Button colorScheme="purple" size="md" marginTop={2}>
+          <Button colorScheme="Red" size="md" marginTop={2}>
             submit
           </Button>
         </FormControl>

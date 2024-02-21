@@ -19,13 +19,14 @@ function EditUser() {
       <SiteHeader />
       <Divider orientation="horizontal" bg="#4d4c4c" height="2" />
       <Box
-        bg="#cccccc"
+        bg="#f2f2f2"
         maxW="40%"
         padding="4"
         marginTop="25px"
         marginLeft="auto"
         marginRight="auto"
         borderRadius="md"
+        shadow={1}
       >
         <FormControl>
           <FormLabel>

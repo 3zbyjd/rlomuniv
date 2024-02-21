@@ -111,7 +111,7 @@ function EditUser() {
 
           <UserType />
 
-          <Button colorScheme="purple" size="md">
+          <Button colorScheme="purple" size="md" marginTop={2}>
             submit
           </Button>
         </FormControl>

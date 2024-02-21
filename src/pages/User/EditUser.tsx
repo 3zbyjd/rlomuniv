@@ -26,6 +26,7 @@ function EditUser() {
         marginLeft="auto"
         marginRight="auto"
         borderRadius="md"
+        border={1}
         shadow={1}
       >
         <FormControl>

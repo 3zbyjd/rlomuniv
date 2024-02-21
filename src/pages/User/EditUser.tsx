@@ -34,7 +34,7 @@ function EditUser() {
             <Input
               type="text"
               placeholder="Enter Firstname"
-              focusBorderColor="purple.400"
+              focusBorderColor="purple"
             />
           </FormLabel>
 
@@ -44,7 +44,7 @@ function EditUser() {
             <Input
               type="text"
               placeholder="Enter Firstname"
-              focusBorderColor="purple.400"
+              focusBorderColor="purple"
             />
           </FormLabel>
 
@@ -58,7 +58,7 @@ function EditUser() {
               <Input
                 type="email"
                 placeholder="Enter Email"
-                focusBorderColor="purple.400"
+                focusBorderColor="purple"
               />
             </InputGroup>
           </FormLabel>
@@ -73,7 +73,7 @@ function EditUser() {
               <Input
                 type="tel"
                 placeholder="Enter Phone Number"
-                focusBorderColor="purple.400"
+                focusBorderColor="purple"
               />
             </InputGroup>
           </FormLabel>
@@ -88,7 +88,7 @@ function EditUser() {
               <Input
                 type="text"
                 placeholder="Enter Mailing Address"
-                focusBorderColor="purple.400"
+                focusBorderColor="purple"
               />
             </InputGroup>
           </FormLabel>
@@ -103,14 +103,14 @@ function EditUser() {
               <Input
                 type="text"
                 placeholder="Enter Apt/Suite Number"
-                focusBorderColor="purple.400"
+                focusBorderColor="purple"
               />
             </InputGroup>
           </FormLabel>
 
           <UserType />
 
-          <Button colorScheme="purple.400" size="md">
+          <Button colorScheme="purple" size="md">
             submit
           </Button>
         </FormControl>

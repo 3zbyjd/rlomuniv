@@ -32,12 +32,12 @@ const router = createBrowserRouter([
     element: <Profile />,
   },
   {
-    path: "/UserList",
-    element: <UserList />,
-  },
-  {
     path: "/EditUser",
     element: <EditUser />,
+  },
+  {
+    path: "/UserList",
+    element: <UserList />,
   },
 ]);
 

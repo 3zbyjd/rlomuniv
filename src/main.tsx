@@ -8,7 +8,7 @@ import CourseDetails from "./pages/CourseDetails/CourseDetails";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Profile from "./pages/Profile/Profile";
 import EditUser from "./pages/User/EditUser";
-import UserList from "./pages/User/UserList";
+// import UserList from "./pages/User/UserList";
 
 const router = createBrowserRouter([
   {

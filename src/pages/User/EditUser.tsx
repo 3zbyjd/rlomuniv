@@ -19,7 +19,7 @@ function EditUser() {
       <SiteHeader />
       <Divider orientation="horizontal" bg="#4d4c4c" height="2" />
       <Box
-        bg="purple.100"
+        bg="purple.200"
         maxW="40%"
         padding="4 4 20 4"
         marginTop="25px"

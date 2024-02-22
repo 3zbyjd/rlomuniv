@@ -21,7 +21,7 @@ function EditUser() {
       <Box
         bg="purple.100"
         maxW="40%"
-        padding="4"
+        padding="4 4 20 4"
         marginTop="25px"
         marginLeft="auto"
         marginRight="auto"

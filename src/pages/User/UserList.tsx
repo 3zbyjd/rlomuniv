@@ -1,17 +1,7 @@
-function UserList() {
-  return (
-    <div>
-      <h1>UserList</h1>
-    </div>
-  );
-}
-
-export default UserList;
-
 // import { Grid, GridItem } from "@chakra-ui/react";
 // import UserListData from "../../../public/assets/users.json";
 // import { useState } from "react";
-// import SiteHeader from "../../components/SiteHeader";
+import SiteHeader from "../../components/SiteHeader";
 
 // interface UserProp {
 //   id: number;
@@ -29,11 +19,11 @@ export default UserList;
 // const [userList, setUserList] = useState<UserProp[]>(UserListData);
 // setUserList;
 
-// function UserList() {
-//   return (
-//     <>
-//       <SiteHeader />
-//       <Grid templateColumns="repeat(7, 1fr)" gap={1}>
+function UserList() {
+  return (
+    <>
+      <SiteHeader />
+      {/* //       <Grid templateColumns="repeat(7, 1fr)" gap={1}>
 //         {userList.map((userData) => (
 //           <>
 //             <GridItem w="100%" bg="gray.100">
@@ -50,9 +40,9 @@ export default UserList;
 //             </GridItem>
 //           </>
 //         ))}
-//       </Grid>
-//     </>
-//   );
-// }
+//       </Grid> */}
+    </>
+  );
+}
 
-// export default UserList;
+export default UserList;

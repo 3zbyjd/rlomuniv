@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Profile from "./pages/Profile/Profile";
 import EditUser from "./pages/User/EditUser";
 import UserList from "./pages/User/UserList";
+import UserDetails from "./pages/User/UserDetails";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/EditUser",
     element: <EditUser />,
+  },
+  {
+    path: "/UserDetails",
+    element: <UserDetails />,
   },
   {
     path: "/UserList",

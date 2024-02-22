@@ -35,10 +35,6 @@ const router = createBrowserRouter([
     path: "/EditUser",
     element: <EditUser />,
   },
-  {
-    path: "/UserList",
-    element: <UserList />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

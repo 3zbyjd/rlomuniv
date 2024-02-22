@@ -21,10 +21,11 @@ function EditUser() {
       <Box
         bg="purple.200"
         maxW="40%"
-        padding="4 4 20 4"
+        padding="4"
         marginTop="25px"
         marginLeft="auto"
         marginRight="auto"
+        marginBottom="100px"
         borderRadius="md"
         border={1}
         shadow={1}

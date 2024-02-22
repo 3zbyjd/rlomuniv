@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "username":"emmajean",
         "firstname":"Emma",
         "lastname": "White",
@@ -11,6 +12,7 @@
         "password": "Test1234"
     },
     {
+        "id":2,
         "username":"jemmajean",
         "firstname":"Jemeana",
         "lastname": "Roberson",
@@ -22,6 +24,7 @@
         "password": "Test1234"
     },
     {
+        "id":3,
         "username":"kcobb0305",
         "firstname":"Jemeana",
         "lastname": "Roberson",
@@ -33,6 +36,7 @@
         "password": "Test1234"
     },
     {
+        "id":4,
         "username":"graydad6374",
         "firstname":"Demond",
         "lastname": "Roberson",
@@ -42,6 +46,77 @@
         "phone1": "(256)655-2159",
         "userType":"System Administrator",
         "password": "Test1234"
-    }
-    
+    },
+    {
+        "id":5,
+        "username":"testuser1",
+        "firstname":"Alton",
+        "lastname": "Anderson",
+        "email": "alton.anderson@email.com",
+        "address1": "1 Alton and Andria Anderson Way",
+        "address2": "",
+        "phone1": "(256)111-1111",
+        "userType":"Student",
+        "password": "testuser1"
+    },
+    {
+        "id":6,
+        "username":"testuser2",
+        "firstname":"Andria",
+        "lastname": "Anderson",
+        "email": "andria.anderson@email.com",
+        "address1": "1 Alton and Andria Anderson Way",
+        "address2": "",
+        "phone1": "(256)111-1111",
+        "userType":"Student",
+        "password": "testuser2"
+    },
+    {
+        "id":7,
+        "username":"testuser3",
+        "firstname":"Antonio",
+        "lastname": "Albertson",
+        "email": "antonio.albertson@email.com",
+        "address1": "1 Antonio Albertson Way",
+        "address2": "",
+        "phone1": "(256)011-1111",
+        "userType":"Student",
+        "password": "testuser3"
+    },
+    {
+        "id":8,
+        "username":"testuser4",
+        "firstname":"Buster",
+        "lastname": "Bailey",
+        "email": "buster.bailey@email.com",
+        "address1": "1 Buster Bailey Way",
+        "address2": "",
+        "phone1": "(256)010-1111",
+        "userType":"Student",
+        "password": "testuser4"
+    },
+    {
+        "id":9,
+        "username":"testuser5",
+        "firstname":"Billy",
+        "lastname": "Blackson",
+        "email": "billy.blackson@email.com",
+        "address1": "1 Billy Blackson Way",
+        "address2": "",
+        "phone1": "(256)101-1111",
+        "userType":"Student",
+        "password": "testuser5"
+    },
+    {
+        "id":10,
+        "username":"testuser6",
+        "firstname":"Bridget",
+        "lastname": "Cookman",
+        "email": "bridget.cookman@email.com",
+        "address1": "1 Bridget Cookman Way",
+        "address2": "Apt 12A",
+        "phone1": "(256)102-1111",
+        "userType":"Student",
+        "password": "testuser6"
+    }    
 ]

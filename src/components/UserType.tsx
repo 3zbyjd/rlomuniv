@@ -1,9 +1,3 @@
-//Selection list:
-//  Instructor
-//  Student
-//  Administrator
-//  SystemAdministrator
-
 import { FormLabel, Select } from "@chakra-ui/react";
 import userTypesData from "../../public/assets/usertype.json";
 import { useState } from "react";

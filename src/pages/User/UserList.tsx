@@ -1,6 +1,7 @@
 // import { Grid, GridItem } from "@chakra-ui/react";
 // import UserListData from "../../../public/assets/users.json";
 // import { useState } from "react";
+import { Divider } from "@chakra-ui/react";
 import SiteHeader from "../../components/SiteHeader";
 
 // interface UserProp {
@@ -23,6 +24,12 @@ function UserList() {
   return (
     <>
       <SiteHeader />
+      <Divider
+        orientation="horizontal"
+        bg="#4d4c4c"
+        height="2"
+        marginBottom="25px"
+      />
       {/* //       <Grid templateColumns="repeat(7, 1fr)" gap={1}>
 //         {userList.map((userData) => (
 //           <>

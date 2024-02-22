@@ -8,8 +8,8 @@ import {
   InputGroup,
   InputLeftAddon,
 } from "@chakra-ui/react";
-import { MdOutlineAttachEmail } from "react-icons/md";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaAddressCard, FaPhoneAlt } from "react-icons/fa";
 import UserType from "../../components/UserType";
 import SiteHeader from "../../components/SiteHeader";
 
@@ -34,21 +34,13 @@ function EditUser() {
           <FormLabel>
             First Name
             <br />
-            <Input
-              type="text"
-              placeholder="Enter Firstname"
-              focusBorderColor="red"
-            />
+            <Input type="text" placeholder="Enter Firstname" />
           </FormLabel>
 
           <FormLabel>
             Last Name
             <br />
-            <Input
-              type="text"
-              placeholder="Enter Firstname"
-              focusBorderColor="red"
-            />
+            <Input type="text" placeholder="Enter Firstname" />
           </FormLabel>
 
           <FormLabel>
@@ -56,13 +48,9 @@ function EditUser() {
             <br />
             <InputGroup>
               <InputLeftAddon>
-                <MdOutlineAttachEmail />
+                <MdEmail />
               </InputLeftAddon>
-              <Input
-                type="email"
-                placeholder="Enter Email"
-                focusBorderColor="red"
-              />
+              <Input type="email" placeholder="Enter Email" />
             </InputGroup>
           </FormLabel>
 
@@ -71,13 +59,9 @@ function EditUser() {
             <br />
             <InputGroup>
               <InputLeftAddon>
-                <FaPhoneSquareAlt />
+                <FaPhoneAlt />
               </InputLeftAddon>
-              <Input
-                type="tel"
-                placeholder="Enter Phone Number"
-                focusBorderColor="red"
-              />
+              <Input type="tel" placeholder="Enter Phone Number" />
             </InputGroup>
           </FormLabel>
 
@@ -86,13 +70,9 @@ function EditUser() {
             <br />
             <InputGroup>
               <InputLeftAddon>
-                <FaPhoneSquareAlt />
+                <FaAddressCard />
               </InputLeftAddon>
-              <Input
-                type="text"
-                placeholder="Enter Mailing Address"
-                focusBorderColor="red"
-              />
+              <Input type="text" placeholder="Enter Mailing Address" />
             </InputGroup>
           </FormLabel>
 
@@ -101,20 +81,16 @@ function EditUser() {
             <br />
             <InputGroup>
               <InputLeftAddon>
-                <FaPhoneSquareAlt />
+                <FaAddressCard />
               </InputLeftAddon>
-              <Input
-                type="text"
-                placeholder="Enter Apt/Suite Number"
-                focusBorderColor="red"
-              />
+              <Input type="text" placeholder="Enter Apt/Suite Number" />
             </InputGroup>
           </FormLabel>
 
           <UserType />
 
           <Button colorScheme="red" size="md" marginTop={2}>
-            submit
+            Submit
           </Button>
         </FormControl>
       </Box>

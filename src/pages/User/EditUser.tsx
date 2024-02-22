@@ -34,13 +34,21 @@ function EditUser() {
           <FormLabel>
             First Name
             <br />
-            <Input type="text" placeholder="Enter Firstname" />
+            <Input
+              type="text"
+              placeholder="Enter Firstname"
+              focusBorderColor="purple"
+            />
           </FormLabel>
 
           <FormLabel>
             Last Name
             <br />
-            <Input type="text" placeholder="Enter Firstname" />
+            <Input
+              type="text"
+              placeholder="Enter Firstname"
+              focusBorderColor="purple"
+            />
           </FormLabel>
 
           <FormLabel>
@@ -50,7 +58,11 @@ function EditUser() {
               <InputLeftAddon>
                 <MdEmail />
               </InputLeftAddon>
-              <Input type="email" placeholder="Enter Email" />
+              <Input
+                type="email"
+                placeholder="Enter Email"
+                focusBorderColor="purple"
+              />
             </InputGroup>
           </FormLabel>
 
@@ -61,7 +73,11 @@ function EditUser() {
               <InputLeftAddon>
                 <FaPhoneAlt />
               </InputLeftAddon>
-              <Input type="tel" placeholder="Enter Phone Number" />
+              <Input
+                type="tel"
+                placeholder="Enter Phone Number"
+                focusBorderColor="purple"
+              />
             </InputGroup>
           </FormLabel>
 
@@ -72,7 +88,11 @@ function EditUser() {
               <InputLeftAddon>
                 <FaAddressCard />
               </InputLeftAddon>
-              <Input type="text" placeholder="Enter Mailing Address" />
+              <Input
+                type="text"
+                placeholder="Enter Mailing Address"
+                focusBorderColor="purple"
+              />
             </InputGroup>
           </FormLabel>
 
@@ -83,7 +103,11 @@ function EditUser() {
               <InputLeftAddon>
                 <FaAddressCard />
               </InputLeftAddon>
-              <Input type="text" placeholder="Enter Apt/Suite Number" />
+              <Input
+                type="text"
+                placeholder="Enter Apt/Suite Number"
+                focusBorderColor="purple"
+              />
             </InputGroup>
           </FormLabel>
 

@@ -17,7 +17,7 @@ function UserType() {
       <FormLabel>
         User Type
         <br />
-        <Select placeholder="Select user type">
+        <Select placeholder="Select user type" focusBorderColor="purple">
           {userType.map((ut) => (
             <option key={ut.id} value={ut.userType}>
               {ut.userType}

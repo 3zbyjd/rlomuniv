@@ -3,18 +3,18 @@ import { Divider, Grid, GridItem } from "@chakra-ui/react";
 // import { useState } from "react";
 import SiteHeader from "../../components/SiteHeader";
 
-interface UserProp {
-  id: number;
-  username: string;
-  firstname: string;
-  lastname: string;
-  email: string;
-  address1: string;
-  address2: string;
-  phone1: string;
-  userType: string;
-  password: string;
-}
+// interface UserProp {
+//   id: number;
+//   username: string;
+//   firstname: string;
+//   lastname: string;
+//   email: string;
+//   address1: string;
+//   address2: string;
+//   phone1: string;
+//   userType: string;
+//   password: string;
+// }
 
 // const [userList, setUserList] = useState<UserProp[]>(UserListData);
 // setUserList;

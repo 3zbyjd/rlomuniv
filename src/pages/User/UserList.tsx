@@ -1,6 +1,6 @@
 import { Divider, Grid, GridItem } from "@chakra-ui/react";
-import UserListData from "../../../public/assets/users.json";
-import { useState } from "react";
+// import UserListData from "../../../public/assets/users.json";
+// import { useState } from "react";
 import SiteHeader from "../../components/SiteHeader";
 
 interface UserProp {
@@ -16,8 +16,8 @@ interface UserProp {
   password: string;
 }
 
-const [userList, setUserList] = useState<UserProp[]>(UserListData);
-setUserList;
+// const [userList, setUserList] = useState<UserProp[]>(UserListData);
+// setUserList;
 
 function UserList() {
   return (
@@ -29,23 +29,12 @@ function UserList() {
         height="2"
         marginBottom="25px"
       />
-      <Grid templateColumns="repeat(4, 1fr)" gap={1}>
-        {userList.map((userData) => (
-          <>
-            <GridItem w="100%" bg="gray.100">
-              {userData.firstname} {userData.lastname}
-            </GridItem>
-            <GridItem w="100%" bg="gray.100">
-              {userData.email}
-            </GridItem>
-            <GridItem w="100%" bg="gray.100">
-              {userData.address1} {userData.address2}
-            </GridItem>
-            <GridItem w="100%" bg="gray.100">
-              {userData.phone1}
-            </GridItem>
-          </>
-        ))}
+      <Grid templateColumns="repeat(5, 1fr)" gap={6}>
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
       </Grid>
     </>
   );

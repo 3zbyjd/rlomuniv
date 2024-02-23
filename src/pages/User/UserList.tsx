@@ -1,5 +1,14 @@
-import { Divider, Grid, GridItem } from "@chakra-ui/react";
-// import UserListData from "../../../public/assets/users.json";
+import {
+  Divider,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  Tr,
+} from "@chakra-ui/react";
+import UserListData from "../../../public/assets/users.json";
 // import { useState } from "react";
 import SiteHeader from "../../components/SiteHeader";
 
@@ -29,13 +38,29 @@ function UserList() {
         height="2"
         marginBottom="25px"
       />
-      <Grid templateColumns="repeat(5, 1fr)" gap={1}>
-        <GridItem w="50%" h="10" bg="blue.500" />
-        <GridItem w="50%" h="10" bg="blue.500" />
-        <GridItem w="50%" h="10" bg="blue.500" />
-        <GridItem w="50%" h="10" bg="blue.500" />
-        <GridItem w="50%" h="10" bg="blue.500" />
-      </Grid>
+
+      <TableContainer>
+        <Table variant="striped" colorScheme="#d9d9d9">
+          <Thead>
+            <Tr>
+              <Th>Name</Th>
+              <Th>Email</Th>
+              <Th>User Type</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            {UserListData.map((user) => (
+              <Tr>
+                <Td>
+                  {user.firstname} {user.lastname}
+                </Td>
+                <Td>{user.email}</Td>
+                <Td>{user.userType}</Td>
+              </Tr>
+            ))}
+          </Tbody>
+        </Table>
+      </TableContainer>
     </>
   );
 }

@@ -40,7 +40,7 @@ function UserList() {
       />
 
       <TableContainer>
-        <Table variant="striped" colorScheme="#d9d9d9">
+        <Table variant="striped" colorScheme="teal">
           <Thead>
             <Tr>
               <Th>Name</Th>

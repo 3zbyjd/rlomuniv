@@ -29,12 +29,12 @@ function UserList() {
         height="2"
         marginBottom="25px"
       />
-      <Grid templateColumns="repeat(5, 2fr)" gap={1}>
-        <GridItem w="100%" h="10" bg="blue.500" />
-        <GridItem w="100%" h="10" bg="blue.500" />
-        <GridItem w="100%" h="10" bg="blue.500" />
-        <GridItem w="100%" h="10" bg="blue.500" />
-        <GridItem w="100%" h="10" bg="blue.500" />
+      <Grid templateColumns="repeat(5, 1fr)" gap={1}>
+        <GridItem w="50%" h="10" bg="blue.500" />
+        <GridItem w="50%" h="10" bg="blue.500" />
+        <GridItem w="50%" h="10" bg="blue.500" />
+        <GridItem w="50%" h="10" bg="blue.500" />
+        <GridItem w="50%" h="10" bg="blue.500" />
       </Grid>
     </>
   );

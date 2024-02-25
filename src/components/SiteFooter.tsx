@@ -10,6 +10,7 @@ function SiteFooter() {
                 templateRows='repeat(2, 1fr)'
                 templateColumns='repeat(5, 1fr)'
                 gap={4}
+                backgroundImage="/assets/img/blackbrickBG.jpg"
             >
                 <GridItem rowSpan={2} colSpan={1} bg='tomato' />
                 <GridItem colSpan={2} bg='papayawhip' />

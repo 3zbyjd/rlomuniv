@@ -8,7 +8,12 @@ function LogIn() {
   if (isAuthenticated) {
     return (
       <>
-        <Stack direction={"row"} spacing={1} backgroundColor={"tomato"}>
+        <Stack
+          direction={"row"}
+          spacing={1}
+          backgroundColor={"tomato"}
+          align="right"
+        >
           <Box>
             <text>Logged in as&#58; Demond Roberson</text>
           </Box>

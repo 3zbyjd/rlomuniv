@@ -1,6 +1,7 @@
 import { Box, Button, Stack } from "@chakra-ui/react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
+import "./LogIn.css";
 
 function LogIn() {
   let isAuthenticated: boolean = true;
@@ -9,10 +10,11 @@ function LogIn() {
     return (
       <>
         <Stack
+          id="loggedInStack"
           direction={"row"}
           spacing={6}
           backgroundColor={"tomato"}
-          align="right"
+          marginRight={0}
         >
           <Box>
             <text>Logged in as&#58; Demond Roberson</text>

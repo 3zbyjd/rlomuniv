@@ -17,7 +17,7 @@ function LogIn() {
           width="80%"
         >
           <Box>
-            <text>Logged in as&#58; Demond Roberson</text>
+            <text>Logged in as&#58; Demond Lamont Roberson</text>
           </Box>
           <Button
             rightIcon={<BiSolidLogOut />}

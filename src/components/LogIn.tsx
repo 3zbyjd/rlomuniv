@@ -1,51 +1,54 @@
-import { Button, Grid, GridItem } from "@chakra-ui/react";
+import { Button, Stack } from "@chakra-ui/react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
-
 function LogIn() {
+  let isAuthenticated: boolean = true;
 
-  let isAuthenticated: boolean = false;
-
-  if(isAuthenticated) {
+  if (isAuthenticated) {
     return (
       <>
-      <Grid templateColumns='repeat(4, 1fr)' gap={1}>
-        <GridItem></GridItem>
-        <GridItem colSpan={2}>
-          <text>
-            Logged in as&#58; Demond Roberson
-          </text>
-        </GridItem>
-        <GridItem>
-          <Button colorScheme="purple" variant="solid" size='xs' position='relative' left='130px'>
-            Log Out&nbsp;
-            <BiSolidLogOut />
+        <Stack direction={"row"} spacing={1}>
+          <text>Logged in as&#58; Demond Roberson</text>
+          <Button
+            rightIcon={<BiSolidLogOut />}
+            colorScheme="purple"
+            variant="solid"
+            size="xs"
+            position="relative"
+            left="130px"
+          >
+            Log Out
           </Button>
-        </GridItem>
-      </Grid>        
-      </>      
-    );    
+        </Stack>
+      </>
+    );
   }
 
   return (
     <>
-    <Grid templateColumns='repeat(4, 1fr)' gap={1}>
-      <GridItem></GridItem>
-      <GridItem></GridItem>
-      <GridItem>
-        <Button colorScheme='purple' variant='solid' size='xs' position='relative' left='130px'>
-          Log In&nbsp;
-          <BiSolidLogIn />
+      <Stack direction={"row"} spacing={1}>
+        <Button
+          rightIcon={<BiSolidLogIn />}
+          colorScheme="purple"
+          variant="solid"
+          size="xs"
+          position="relative"
+          left="130px"
+        >
+          Log In
         </Button>
-      </GridItem>
-      <GridItem>
-        <Button colorScheme='purple' variant='solid' size='xs' position='relative' left='130px'>
-          Sign Up&nbsp;
-          <IoMdCreate />
+        <Button
+          rightIcon={<IoMdCreate />}
+          colorScheme="purple"
+          variant="solid"
+          size="xs"
+          position="relative"
+          left="130px"
+        >
+          Sign Up
         </Button>
-      </GridItem>
-    </Grid>
+      </Stack>
     </>
   );
 }

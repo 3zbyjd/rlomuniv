@@ -39,7 +39,7 @@ function UserList() {
         marginBottom="25px"
       />
 
-      <TableContainer width="80%">
+      <TableContainer width="80%" margin="0 auto">
         <Table variant="striped" colorScheme="gray">
           <Thead>
             <Tr>

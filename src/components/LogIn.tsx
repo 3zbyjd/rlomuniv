@@ -24,6 +24,8 @@ function LogIn() {
             colorScheme="purple"
             variant="solid"
             size="xs"
+            position={"relative"}
+            marginRight={0}
           >
             Log Out
           </Button>

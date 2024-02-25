@@ -10,7 +10,7 @@ function LogIn() {
       <>
         <Stack
           direction={"row"}
-          spacing={1}
+          spacing={6}
           backgroundColor={"tomato"}
           align="right"
         >

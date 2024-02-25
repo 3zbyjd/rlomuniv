@@ -1,10 +1,10 @@
-import { Container, Divider, Grid, GridItem} from "@chakra-ui/react";
+import { Divider, Grid, GridItem} from "@chakra-ui/react";
 
 function SiteFooter() {
     return (
         <>
             <Divider orientation="horizontal" bg="#4d4c4c" height="2" />
-            <Container width="100%" backgroundImage="/assets/img/blackbrickBG.jpg">
+            {/* <Container width="100%" backgroundImage="/assets/img/blackbrickBG.jpg"> */}
             <Grid
                 h='200px'
                 templateRows='repeat(2, 1fr)'
@@ -16,7 +16,7 @@ function SiteFooter() {
                 <GridItem colSpan={2} bg='papayawhip' />
                 <GridItem colSpan={4} bg='tomato' />
             </Grid>
-            </Container>
+            {/* </Container> */}
         </>
     )
 }

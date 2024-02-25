@@ -46,8 +46,9 @@ function UserList() {
       <TableContainer
         width="80%"
         margin="0 auto"
-        border="1px"
+        border="2px"
         borderRadius="4px"
+        borderColor={"gray"}
       >
         <Table variant="striped" colorScheme="gray">
           <Thead>

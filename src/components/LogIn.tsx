@@ -10,7 +10,7 @@ function LogIn() {
     return (
       <>
         <Stack
-          id="loggedInStack"
+          className="loggedInStack"
           direction={"row"}
           spacing={6}
           backgroundColor={"tomato"}

@@ -13,7 +13,6 @@ function LogIn() {
           className="loggedInStack"
           direction={"row"}
           spacing={6}
-          backgroundColor={"tomato"}
           width="80%"
         >
           <Box width="85%">

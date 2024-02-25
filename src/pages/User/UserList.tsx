@@ -44,7 +44,7 @@ function UserList() {
       />
 
       <TableContainer
-        width="60%"
+        maxWidth="60%"
         margin="0 auto"
         border="2px"
         borderRadius="4px"

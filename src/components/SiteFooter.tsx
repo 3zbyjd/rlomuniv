@@ -12,10 +12,10 @@ function SiteFooter() {
                 gap={4}
                 backgroundImage="/assets/img/blackbrickBG.jpg"
             >
-                <GridItem rowSpan={2} colSpan={1} bg='tomato' />
-                <GridItem colSpan={2} bg='papayawhip' />
-                <GridItem colSpan={2} bg='papayawhip' />
-                <GridItem colSpan={4} bg='tomato' />
+                <GridItem rowSpan={2} colSpan={1} />
+                <GridItem colSpan={2} />
+                <GridItem colSpan={2} />
+                <GridItem colSpan={4} />
             </Grid>
             {/* </Container> */}
         </>

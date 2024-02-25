@@ -27,14 +27,12 @@ function LogIn() {
 
   return (
     <>
-      <Stack direction={"row"} spacing={1}>
+      <Stack direction={"row"} spacing={6}>
         <Button
           rightIcon={<BiSolidLogIn />}
           colorScheme="purple"
           variant="solid"
-          size="xs"
-          position="relative"
-          left="130px"
+          size="sm"
         >
           Log In
         </Button>
@@ -42,9 +40,7 @@ function LogIn() {
           rightIcon={<IoMdCreate />}
           colorScheme="purple"
           variant="solid"
-          size="xs"
-          position="relative"
-          left="130px"
+          size="sm"
         >
           Sign Up
         </Button>

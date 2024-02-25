@@ -8,7 +8,7 @@
         "address1": "154 Forest Home Drive",
         "address2": "",
         "phone1": "(256)565-3511",
-        "userType":"Directory",
+        "userType":"Director",
         "password": "Test1234"
     },
     {
@@ -20,7 +20,7 @@
         "address1": "158 Dustin Lane",
         "address2": "",
         "phone1": "(256)655-8237",
-        "userType":"Directory Assistant",
+        "userType":"Director Assistant",
         "password": "Test1234"
     },
     {
@@ -32,7 +32,7 @@
         "address1": "158 Dustin Lane",
         "address2": "",
         "phone1": "(256)655-8237",
-        "userType":"Directory Assistant",
+        "userType":"Director Assistant",
         "password": "Test1234"
     },
     {

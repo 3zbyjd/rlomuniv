@@ -25,7 +25,7 @@ function LogIn() {
             variant="solid"
             size="xs"
             position={"relative"}
-            marginRight={0}
+            marginRight="130px"
           >
             Log Out
           </Button>

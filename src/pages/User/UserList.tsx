@@ -1,5 +1,7 @@
 import {
+  Button,
   Divider,
+  Stack,
   Table,
   TableContainer,
   Tbody,
@@ -11,6 +13,8 @@ import {
 import UserListData from "../../../public/assets/users.json";
 // import { useState } from "react";
 import SiteHeader from "../../components/SiteHeader";
+import { FaUserEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 
 // interface UserProp {
 //   id: number;
@@ -61,6 +65,24 @@ function UserList() {
                 </Td>
                 <Td>{user.email}</Td>
                 <Td>{user.userType}</Td>
+                <Td>
+                  <Stack direction="row" spacing={1}>
+                    <Button
+                      leftIcon={<FaUserEdit />}
+                      colorScheme="purple"
+                      variant="solid"
+                    >
+                      Edit
+                    </Button>
+                    <Button
+                      leftIcon={<MdDelete />}
+                      colorScheme="red"
+                      variant="solid"
+                    >
+                      Delete
+                    </Button>
+                  </Stack>
+                </Td>
               </Tr>
             ))}
           </Tbody>

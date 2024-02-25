@@ -28,13 +28,7 @@ function LogIn() {
 
   return (
     <>
-      <Stack
-        direction={"row"}
-        spacing={2}
-        align="right"
-        width="80%"
-        backgroundColor={"tomato"}
-      >
+      <Stack direction={"row"} spacing={2} align="right" width="80%">
         <Box width="75%"></Box>
         <Button
           rightIcon={<BiSolidLogIn />}

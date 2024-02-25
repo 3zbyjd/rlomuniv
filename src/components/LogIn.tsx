@@ -27,7 +27,7 @@ function LogIn() {
 
   return (
     <>
-      <Stack direction={"row"} spacing={6}>
+      <Stack direction={"row"} spacing={6} align="right">
         <Button
           rightIcon={<BiSolidLogIn />}
           colorScheme="purple"

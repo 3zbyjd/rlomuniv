@@ -8,7 +8,7 @@ function LogIn() {
   if (isAuthenticated) {
     return (
       <>
-        <Stack direction={"row"} spacing={1}>
+        <Stack direction={"row"} spacing={1} backgroundColor={"tomato"}>
           <text>Logged in as&#58; Demond Roberson</text>
           <Button
             rightIcon={<BiSolidLogOut />}

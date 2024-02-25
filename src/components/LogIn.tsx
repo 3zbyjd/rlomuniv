@@ -1,4 +1,4 @@
-import { Button, Stack } from "@chakra-ui/react";
+import { Box, Button, Stack } from "@chakra-ui/react";
 import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { IoMdCreate } from "react-icons/io";
 
@@ -9,7 +9,9 @@ function LogIn() {
     return (
       <>
         <Stack direction={"row"} spacing={1} backgroundColor={"tomato"}>
-          <text>Logged in as&#58; Demond Roberson</text>
+          <Box>
+            <text>Logged in as&#58; Demond Roberson</text>
+          </Box>
           <Button
             rightIcon={<BiSolidLogOut />}
             colorScheme="purple"

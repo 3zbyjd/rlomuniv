@@ -4,17 +4,12 @@ import { IoMdCreate } from "react-icons/io";
 import "./LogIn.css";
 
 function LogIn() {
-  let isAuthenticated: boolean = true;
+  let isAuthenticated: boolean = false;
 
   if (isAuthenticated) {
     return (
       <>
-        <Stack
-          className="loggedInStack"
-          direction={"row"}
-          spacing={6}
-          width="80%"
-        >
+        <Stack direction={"row"} spacing={6} width="80%">
           <Box width="85%">
             <text>Logged in as&#58; Demond Lamont Roberson</text>
           </Box>
@@ -33,12 +28,19 @@ function LogIn() {
 
   return (
     <>
-      <Stack direction={"row"} spacing={6} align="right">
+      <Stack
+        direction={"row"}
+        spacing={2}
+        align="right"
+        width="80%"
+        backgroundColor={"tomato"}
+      >
+        <Box width="60%"></Box>
         <Button
           rightIcon={<BiSolidLogIn />}
           colorScheme="purple"
           variant="solid"
-          size="sm"
+          size="xs"
         >
           Log In
         </Button>
@@ -46,7 +48,7 @@ function LogIn() {
           rightIcon={<IoMdCreate />}
           colorScheme="purple"
           variant="solid"
-          size="sm"
+          size="xs"
         >
           Sign Up
         </Button>

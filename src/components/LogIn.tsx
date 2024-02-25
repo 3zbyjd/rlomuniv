@@ -14,7 +14,7 @@ function LogIn() {
           direction={"row"}
           spacing={6}
           backgroundColor={"tomato"}
-          marginRight={0}
+          width="30%"
         >
           <Box>
             <text>Logged in as&#58; Demond Roberson</text>

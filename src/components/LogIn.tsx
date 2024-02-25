@@ -16,7 +16,7 @@ function LogIn() {
           backgroundColor={"tomato"}
           width="80%"
         >
-          <Box>
+          <Box width="90%">
             <text>Logged in as&#58; Demond Lamont Roberson</text>
           </Box>
           <Button
@@ -24,8 +24,7 @@ function LogIn() {
             colorScheme="purple"
             variant="solid"
             size="xs"
-            position={"relative"}
-            left="130px"
+            width="10%"
           >
             Log Out
           </Button>

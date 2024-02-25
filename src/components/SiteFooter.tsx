@@ -1,4 +1,4 @@
-import { Container, Divider, Grid, GridItem, Image } from "@chakra-ui/react";
+import { Container, Divider, Grid, GridItem} from "@chakra-ui/react";
 
 function SiteFooter() {
     return (

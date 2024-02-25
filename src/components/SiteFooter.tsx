@@ -4,7 +4,7 @@ function SiteFooter() {
     return (
         <>
             <Divider orientation="horizontal" bg="#4d4c4c" height="2" />
-            <Container backgroundImage="/assets/img/rlom_univ_logo.png">
+            <Container backgroundImage="/assets/img/blackbrickBG.jpg">
             <Grid
                 h='200px'
                 templateRows='repeat(2, 1fr)'

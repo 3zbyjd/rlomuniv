@@ -1,6 +1,7 @@
 import { Divider } from "@chakra-ui/react";
 import CourseCardList from "../../components/CourseCard";
 import SiteHeader from "../../components/SiteHeader";
+import SiteFooter from "../../components/footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         marginBottom="25px"
       />
       <CourseCardList />
+      <SiteFooter />
     </>
   );
 }

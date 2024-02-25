@@ -35,7 +35,7 @@ function LogIn() {
         width="80%"
         backgroundColor={"tomato"}
       >
-        <Box width="70%"></Box>
+        <Box width="75%"></Box>
         <Button
           rightIcon={<BiSolidLogIn />}
           colorScheme="purple"

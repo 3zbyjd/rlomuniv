@@ -50,7 +50,7 @@ function UserList() {
         border="2px"
         borderRadius="4px"
         borderColor={"gray"}
-        marginBottom="20px"
+        marginBottom="25px"
       >
         <Table variant="striped" colorScheme="gray">
           <Thead>

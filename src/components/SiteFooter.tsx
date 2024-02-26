@@ -11,7 +11,7 @@ function SiteFooter() {
         gap={4}
         backgroundImage="/assets/img/BlackBrickBG2.png"
       >
-        <GridItem rowSpan={2} colSpan={1} bg="whiteAlpha.100" />
+        <GridItem rowSpan={2} colSpan={1} bg="whiteAlpha.200" />
         <GridItem colSpan={2} />
         <GridItem colSpan={2} />
         <GridItem colSpan={4} />

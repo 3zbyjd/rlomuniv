@@ -15,6 +15,7 @@ import UserListData from "../../../public/assets/users.json";
 import SiteHeader from "../../components/SiteHeader";
 import { FaUserEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import SiteFooter from "../../components/SiteFooter";
 
 // interface UserProp {
 //   id: number;
@@ -89,6 +90,13 @@ function UserList() {
           </Tbody>
         </Table>
       </TableContainer>
+      <Divider
+        orientation="horizontal"
+        bg="#4d4c4c"
+        height="2"
+        marginBottom="25px"
+      />
+      <SiteFooter />
     </>
   );
 }

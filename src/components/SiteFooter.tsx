@@ -5,7 +5,7 @@ function SiteFooter() {
     <>
       <Divider orientation="horizontal" bg="#4d4c4c" height="2" />
       <Grid
-        h="250px"
+        h="150px"
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(5, 1fr)"
         gap={4}

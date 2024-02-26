@@ -12,9 +12,9 @@ function SiteFooter() {
         backgroundImage="/assets/img/BlackBrickBG2.png"
       >
         <GridItem rowSpan={2} colSpan={1} bg="whiteAlpha.400" />
-        <GridItem colSpan={2} />
-        <GridItem colSpan={2} />
-        <GridItem colSpan={4} />
+        <GridItem colSpan={2} bg="whiteAlpha.400" />
+        <GridItem colSpan={2} bg="whiteAlpha.400" />
+        <GridItem colSpan={4} bg="whiteAlpha.400" />
       </Grid>
       {/* </Container> */}
     </>

@@ -90,12 +90,6 @@ function UserList() {
           </Tbody>
         </Table>
       </TableContainer>
-      <Divider
-        orientation="horizontal"
-        bg="#4d4c4c"
-        height="2"
-        marginBottom="25px"
-      />
       <SiteFooter />
     </>
   );

@@ -16,7 +16,6 @@ function SiteFooter() {
         <GridItem colSpan={2} bg="whiteAlpha.400" />
         <GridItem colSpan={4} bg="whiteAlpha.400" />
       </Grid>
-      {/* </Container> */}
     </>
   );
 }

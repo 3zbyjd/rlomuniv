@@ -7,6 +7,7 @@ import {
   Divider,
   Heading,
   Image,
+  Link,
   SimpleGrid,
   Stack,
   Text,
@@ -14,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import Pagination from "./pagination";
 import data from "../../public/assets/course_catalog.json";
+import "./CourseCard.css";
 import { useState } from "react";
 
 interface CourseProp {
@@ -45,7 +47,9 @@ const CourseCardList = () => {
                   borderRadius="lg"
                 />
                 <Stack mt="6" spacing="3">
-                  <Heading size="md">{course.courseHeading}</Heading>
+                  <Heading size="md">
+                    <Link href="/Course">{course.courseHeading}</Link>
+                  </Heading>
                   <Text>{course.courseDescription}</Text>
                   <Text color="purple" fontSize="2xl">
                     {course.formattedCoursePrice}
@@ -53,12 +57,12 @@ const CourseCardList = () => {
                 </Stack>
               </CardBody>
               <Divider />
-              <CardFooter>
+              <CardFooter className="card-footer">
                 <ButtonGroup spacing="2">
                   <Button variant="solid" colorScheme="purple">
                     Buy now
                   </Button>
-                  <Button variant="ghost" colorScheme="purple">
+                  <Button variant="outline" colorScheme="purple">
                     Add to cart
                   </Button>
                 </ButtonGroup>
@@ -72,18 +76,6 @@ const CourseCardList = () => {
           setPageItems={setCourselist}
         />
       </Container>
-      {/* <div>
-        <ul>
-          {courseList.map((course, i) => (
-            <li key={i}>{course}</li>
-          ))}
-        </ul>
-        <Pagination
-          items={data}
-          pageLimit={pageLimit}
-          setPageItems={setCourselist}
-        />
-      </div> */}
     </>
   );
 };

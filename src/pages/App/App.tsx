@@ -1,5 +1,5 @@
 import { Divider } from "@chakra-ui/react";
-import CourseCardList from "../../components/CourseCard";
+import CourseCardList from "../../components/CourseCardList";
 import SiteHeader from "../../components/SiteHeader";
 import SiteFooter from "../../components/SiteFooter";
 

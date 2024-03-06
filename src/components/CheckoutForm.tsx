@@ -4,6 +4,7 @@ import {
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
+import { StripeError } from "@stripe/stripe-js";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
@@ -43,8 +44,8 @@ export default function CheckoutForm() {
     });
   }, [stripe]);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e: StripeError) => {
+    e.message;
 
     if (!stripe || !elements) {
       // Stripe.js hasn't yet loaded.

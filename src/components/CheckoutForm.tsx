@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import {
   PaymentElement,
   useStripe,
@@ -69,7 +69,8 @@ export default function CheckoutForm() {
     // be redirected to an intermediate site first to authorize the payment, then
     // redirected to the `return_url`.
     if (error.type === "card_error" || error.type === "validation_error") {
-      setMessage(error.message);
+      let errorMessage = error.message as string;
+      setMessage(errorMessage);
     } else {
       setMessage("An unexpected error occurred.");
     }

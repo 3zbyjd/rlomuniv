@@ -48,7 +48,9 @@ const CourseCardList = () => {
                 />
                 <Stack mt="6" spacing="3">
                   <Heading size="md">
-                    <Link href="/Course">{course.courseHeading}</Link>
+                    <Link href="/SingleItemCheckout">
+                      {course.courseHeading}
+                    </Link>
                   </Heading>
                   <Text>{course.courseDescription}</Text>
                   <Text color="purple" fontSize="2xl">

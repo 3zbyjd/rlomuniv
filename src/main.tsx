@@ -10,6 +10,7 @@ import Profile from "./pages/Profile/Profile";
 import EditUser from "./pages/User/EditUser";
 import UserList from "./pages/User/UserList";
 import UserDetails from "./pages/User/UserDetails";
+import SingleItemCheckout from "./components/SingleItemCheckout";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/UserList",
     element: <UserList />,
+  },
+  {
+    path: "/SingleItemCheckout",
+    element: <SingleItemCheckout />,
   },
 ]);
 

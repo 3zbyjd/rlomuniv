@@ -1,10 +1,10 @@
-import { SetStateAction, useEffect, useState } from "react";
+import { FormEventHandler, useEffect, useState } from "react";
 import {
   PaymentElement,
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
-import { StripeError } from "@stripe/stripe-js";
+import { StripeError, StripePaymentElementOptions } from "@stripe/stripe-js";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
@@ -82,9 +82,17 @@ export default function CheckoutForm() {
     layout: "tabs",
   };
 
+  let paymentElementOptionsStripe =
+    paymentElementOptions as StripePaymentElementOptions;
+
+  let handleSubmitElement = handleSubmit as FormEventHandler<HTMLFormElement>;
+
   return (
-    <form id="payment-form" onSubmit={handleSubmit}>
-      <PaymentElement id="payment-element" options={paymentElementOptions} />
+    <form id="payment-form" onSubmit={handleSubmitElement}>
+      <PaymentElement
+        id="payment-element"
+        options={paymentElementOptionsStripe}
+      />
       <button disabled={isLoading || !stripe || !elements} id="submit">
         <span id="button-text">
           {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
